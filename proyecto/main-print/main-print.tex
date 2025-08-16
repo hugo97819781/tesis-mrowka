@@ -31,15 +31,15 @@
     \usepackage{mathrsfs} % agregar después de fuente unicode-math, si se usa
 
 %Referencias, Bibliografía e Índices
-    %\usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
-    %\usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
-    %\usepackage{csquotes,url}
-    %    \addbibresource{../chapters/referencias.bib}
-    %\usepackage{imakeidx}
-    %    \makeindex[columns=1, intoc, title=PRUEBA]
-    %    \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
-    %    \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
-    %    \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
+    \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
+    \usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
+    \usepackage{csquotes,url}
+        \addbibresource{../chapters/referencias.bib}
+    \usepackage{imakeidx}
+        \makeindex[columns=1, intoc, title=PRUEBA]
+        \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
+        \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
+        \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
 
 %Etiquetas de las enumeraciones
     \usepackage[shortlabels]{enumitem}
@@ -49,20 +49,9 @@
     \usepackage{thmtools}
     \usepackage[framemethod=TikZ]{mdframed}
     \allowdisplaybreaks
-    \input{../resources/cajas-minimal.tex}
+    \input{../resources/cajas-print.tex}
 %Comandos Creados
     \input{../resources/comandos.tex}
-
-%Exclusivo del minimal
-    %\renewcommand{\label}[1]{}
-    \renewcommand{\ref}[1]{??}
-    \renewcommand{\pageref}[1]{??}
-    \newcommand{\autoref}[1]{??}
-    \renewcommand{\cite}[1]{}
-    \renewcommand{\index}[1]{}
-    \newcommand{\href}[2]{#2}
-    \newcommand{\hyperref}[2][]{#2}
-    \providecommand{\texorpdfstring}[2]{#1}
 
 \begin{document}
 \pagestyle{empty}
@@ -89,10 +78,9 @@
     \input{../chapters/c3.tex}
     \input{../chapters/c4.tex}
 
-    %\printindex[trad]								% Índice de Traducciones
-    %\printindex[sym]								% Índice Simbólico y Alfabético
-	%\printindex[alph]
-	
-    %\printbibliography[heading=bibintoc, title={Referencias}]
+    \printindex[trad]								% Índice de Traducciones
+    \printindex[sym]								% Índice Simbólico y Alfabético
+	\printindex[alph]
+    \printbibliography[heading=bibintoc, title={Referencias}]
 
 \end{document}

@@ -1,8 +1,6 @@
 %Formato e idioma
     \documentclass[letterpaper,DIV=12,12pt]{scrbook}
     \usepackage[spanish,mexico,shorthands=off,es-lcroman]{babel}
-    \usepackage{scrlayer-scrpage}
-    \input{../resources/koma.tex}
 %Utilidades
     \usepackage{array}
     \usepackage[x11names]{xcolor}
@@ -19,33 +17,34 @@
 %Cajas de Teoremas
     \usepackage{thmtools}
     \usepackage[framemethod=TikZ]{mdframed}
-    \allowdisplaybreaks
-    \input{../resources/cajas-minimal.tex}
+    \newtheorem{definicion}{Definición}[section]
+    \newtheorem{proposicion}[definicion]{Proposición}
+    \newtheorem{lema}[definicion]{Lema}
+    \newtheorem{corolario}[definicion]{Corolario}
+    \newtheorem{observacion}[definicion]{Observación}
+    \newtheorem{ejemplo}[definicion]{Ejemplo}
+    \newtheorem{consideracion}[definicion]{Consideración}
+    \newtheorem{teorema}[definicion]{Teorema}
 %Comandos Creados
     \input{../resources/comandos.tex}
 %Exclusivo del minimal
     \renewcommand{\ref}[1]{??}
     \renewcommand{\pageref}[1]{??}
     \newcommand{\autoref}[1]{??}
-    \renewcommand{\cite}[1]{}
-    \renewcommand{\index}[1]{}
-    \newcommand{\href}[2]{#2}
+    \renewcommand{\cite}[2]{??}
+    \renewcommand{\index}[2][]{}
     \newcommand{\hyperref}[2][]{#2}
     \providecommand{\texorpdfstring}[2]{#1}
 
 \begin{document}
 \pagestyle{empty}
-    \frontmatter
-    \input{../portada/portada.tex}
+    \pagestyle{empty}
     \chapter*{Agradecimientos}
-    \thispagestyle{empty}
 	\input{../chapters/a0-agradecimientos.tex}
     \tableofcontents
-    \thispagestyle{empty}
     \chapter*{Introducción}
     \addcontentsline{toc}{chapter}{Introducción}
     \input{../chapters/a1-introduccion.tex}
-    \mainmatter
     \input{../chapters/c0.tex}
     \input{../chapters/c1.tex}
     \input{../chapters/c2.tex}
