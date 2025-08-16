@@ -1,0 +1,69 @@
+\begin{theindex}
+
+  \item $(P,<) \cong (Q,\sqsubset)$, 3
+  \item $0$ (cero), 3
+  \item $<_x$, 7
+  \item $D_G$ (si $\mathcal{G} \subseteq \mathbb{P}_\ms{A}$), 33
+  \item $D_a$ (si $a \in \ms{A}$), 33
+  \item $F:\mathcal{C} \to \mathcal{C}'$, 4
+  \item $X^\kappa$, 7
+  \item $X^{<\kappa}$, 7
+  \item $[X]^\kappa$, 7
+  \item $[X]^{<\kappa}$, 7
+  \item $[X]^{> \kappa}$, 7
+  \item $[X]^{\geq \kappa}$, 7
+  \item $[X]^{\leq \kappa}$, 7
+  \item $\Ac$, 1
+  \item $\Ad(N)$, 13
+  \item $\CAR$, 5
+  \item $\Ma$, 11
+  \item $\Ma(\kappa)$, 11
+  \item $\Mad(N)$, 14
+  \item $\OR$, 3
+  \item $\Pdm$, 69
+  \item $\Phi_h$, 15
+  \item $\Pm$, 69
+  \item $\Psi(\ms{A})$, 38
+  \item $\Psi_N(\ms{A})$, 38
+  \item $\aleph_\alpha$, 6
+  \item $\alpha + \beta$, 5
+  \item $\alpha < \beta$, 3
+  \item $\alpha \cdot \beta$, 5
+  \item $\alpha ^ \beta$, 5
+  \item $\alpha+1$, 3
+  \item $\cla(A)$, 9
+  \item $\der(A)$, 9
+  \item $\ext(A)$, 9
+  \item $\fron(A)$, 9
+  \item $\inte(A)$, 9
+  \item $\kappa + \lambda$, 5
+  \item $\kappa \cdot \lambda$, 5
+  \item $\kappa ^ \lambda$, 5
+  \item $\leq_\ms{A}$, 33
+  \item $\mapsto$, 2
+  \item $\mathbb{P}_\ms{A}$, 33
+  \item $\mathcal{B}_\ms{A}$, 39
+  \item $\mathcal{B}_x$, 39
+  \item $\mathfrak{a}$, 21
+  \item $\mathfrak{m}$, 12
+  \item $\ms{A} \upharpoonright X$, 23
+  \item $\ms{A}_X$, 20
+  \item $\ms{A}_{D,A}$, 19
+  \item $\ms{F}(\ms{A})$, 59
+  \item $\ms{I}(\ms{A})$, 21
+  \item $\ms{I}^+(\ms{A})$, 21
+  \item $\ms{I}_N(\ms{A})$, 21
+  \item $\ms{I}_N^+(\ms{A})$, 21
+  \item $\omega$, 3
+  \item $\omega_\alpha$, 6
+  \item $\prod_{\alpha \in I} \kappa_\alpha$, 5
+  \item $\sum_{\alpha \in I} \kappa_\alpha$, 5
+  \item $\tau_\ms{A}$, 38
+  \item $\tau_{N,\ms{A}}$, 38
+  \item $\zfc$, 1
+  \item $h(T,\leq)$, 7
+  \item $o(x)$, 7
+  \item $p \parallel q$, 2
+  \item $p \perp q$, 2
+
+\end{theindex}

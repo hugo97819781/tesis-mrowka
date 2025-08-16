@@ -1,4 +1,5 @@
 \documentclass[a5paper,DIV=12,10pt]{scrbook}
+\usepackage[spanish,mexico,shorthands=off,es-lcroman]{babel}
 \usepackage{scrlayer-scrpage}
 \input{../resources/koma.tex}
 
@@ -10,21 +11,23 @@
 \usepackage{graphicx}
 \usepackage[x11names]{xcolor}
 \usepackage{lipsum}
+%\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
 
-%Letra Artemisia con Euler (sin warnings)
-    \usepackage[spanish,es-lcroman,mexico]{babel}
-    \usepackage[T1]{fontenc}
-    \usepackage{gfsartemisia}
-    \let\iint\relax
-    \let\iiint\relax
-    \let\iiiint\relax
-    \let\idotsint\relax
-    \usepackage{mathtools}
-    \usepackage{eulervm}
-    %\DeclareMathAlphabet{\mathnormal}{U}{zeuex}{m}{n}
-    \usepackage{mathrsfs}
-    \usepackage{amssymb}
-    \allowdisplaybreaks
+%Fuente del documento
+\usepackage{fontspec}
+\setmainfont{GFSArtemisia.otf}[
+    Path = ../fonts/GFSArtemisia/,
+    BoldFont = GFSArtemisiaBold.otf,
+    ItalicFont = GFSArtemisiaIt.otf,
+    BoldItalicFont = GFSArtemisiaBoldIt.otf
+]
+\usepackage{unicode-math}
+\setmathfont{STIXTwoMath-Regular.ttf}[
+    Path = ../fonts/StixTwo/
+]
+\allowdisplaybreaks
 
 %Referencias, Bibliografía e Índices
 \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
@@ -45,7 +48,7 @@
 %Etiquetas de las enumeraciones
 \usepackage[shortlabels]{enumitem}
 \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
-\setenumerate[2]{label=\MakeLowercase{\arabic*}), ref=\alph*}
+\setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
 
 %Cajas de Teoremas
 \usepackage{thmtools}

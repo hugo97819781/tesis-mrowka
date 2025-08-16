@@ -1,0 +1,156 @@
+\indexentry{clase}{1}
+\indexentry{clase!propia}{1}
+\indexentry{clase!conjunto}{1}
+\indexentry{elementos!comparables}{2}
+\indexentry{elementos!incomparables}{2}
+\indexentry{elementos!compatibles}{2}
+\indexentry{elementos!incompatibles}{2}
+\indexentry{cadena}{2}
+\indexentry{anticadena}{2}
+\indexentry{Principio!de Maximalidad de Hausdorff}{3}
+\indexentry{Hausdorff!Principio de Maximalidad de}{3}
+\indexentry{orden!total}{3}
+\indexentry{orden!bueno}{3}
+\indexentry{orden!bien fundado}{3}
+\indexentry{orden!completo}{3}
+\indexentry{isomorfismo(de orden)}{3}
+\indexentry{morfismo (de orden)}{3}
+\indexentry{orden!isomorfo a otro}{3}
+\indexentry{función!creciente}{3}
+\indexentry{función!decreciente}{3}
+\indexentry{ordinal}{3}
+\indexentry{natural}{3}
+\indexentry{ordinal!cero}{3}
+\indexentry{ordinal!sucesor}{3}
+\indexentry{ordinal!límite}{3}
+\indexentry{Teorema!de Inducción transfinita}{4}
+\indexentry{transfinita!Inducción}{4}
+\indexentry{funcional}{4}
+\indexentry{Teorema!de Recursión transfinita}{4}
+\indexentry{transfinita!Recursión}{4}
+\indexentry{ordinal!suma}{5}
+\indexentry{ordinal!producto}{5}
+\indexentry{ordinal!exponenciación}{5}
+\indexentry{Teorema!de enumeración}{5}
+\indexentry{enumeración!Teorema de}{5}
+\indexentry{cardinalidad}{5}
+\indexentry{conjunto!finito}{5}
+\indexentry{conjunto!infinito}{5}
+\indexentry{conjunto!numerable}{5}
+\indexentry{conjunto!a lo más numerable}{5}
+\indexentry{conjunto!no numerable}{5}
+\indexentry{conjunto!más que numerable}{5}
+\indexentry{cardinal}{5}
+\indexentry{cardinal!suma}{5}
+\indexentry{cardinal!producto}{5}
+\indexentry{cardinal!exponenciación}{5}
+\indexentry{cardinal!suma general}{5}
+\indexentry{cardinal!producto general}{5}
+\indexentry{Teorema!de la suma cardinal}{6}
+\indexentry{Teorema!del producto cardinal}{6}
+\indexentry{Lema!de König}{6}
+\indexentry{König!Lema de}{6}
+\indexentry{Teorema!de Cantor}{6}
+\indexentry{Cantor!Teorema de}{6}
+\indexentry{árbol}{7}
+\indexentry{árbol!orden de un elemento de un}{7}
+\indexentry{árbol!rama de un}{7}
+\indexentry{topología}{8}
+\indexentry{espacio!topológico}{8}
+\indexentry{espacio}{8}
+\indexentry{conjunto!cerrado}{8}
+\indexentry{conjunto!abierto}{8}
+\indexentry{función!continua}{8}
+\indexentry{función!homeomorfismo}{8}
+\indexentry{subespacio}{8}
+\indexentry{topología!de subespacio}{8}
+\indexentry{encaje}{8}
+\indexentry{base}{8}
+\indexentry{subbase}{8}
+\indexentry{base!local}{8}
+\indexentry{base!de vecindades}{8}
+\indexentry{vecindad}{8}
+\indexentry{operador!interior}{9}
+\indexentry{operador!clausura}{9}
+\indexentry{operador!exterior}{9}
+\indexentry{operador!frontera}{9}
+\indexentry{operador!derivado}{9}
+\indexentry{punto!aislado}{9}
+\indexentry{punto!de acumulación}{9}
+\indexentry{conjunto!denso}{9}
+\indexentry{producto!topológico}{9}
+\indexentry{producto!de Tychonoff}{9}
+\indexentry{suma topológica}{9}
+\indexentry{propiedad!topológica}{9}
+\indexentry{propiedad!hereditaria}{9}
+\indexentry{propiedad!débilmente hereditaria}{9}
+\indexentry{propiedad!factorizable}{9}
+\indexentry{propiedad!productiva}{9}
+\indexentry{propiedad!finitamente productiva}{9}
+\indexentry{orden!\textit{c.c.c.}}{11}
+\indexentry{filtro}{11}
+\indexentry{ideal}{11}
+\indexentry{filtro!propio}{11}
+\indexentry{ideal!propio}{11}
+\indexentry{subconjunto!denso (de un orden parcial)}{11}
+\indexentry{subconjunto!denso bajo $p$ (de un orden parcial)}{11}
+\indexentry{filtro!genérico}{11}
+\indexentry{filtro!$\ms{D}$-genérico}{11}
+\indexentry{Axioma!de Martin}{11}
+\indexentry{Martin!Axioma de}{11}
+\indexentry{casi!ajeno}{13}
+\indexentry{casi!ajena sobre $N$, familia}{13}
+\indexentry{familia!casi ajena}{13}
+\indexentry{casi!ajena, familia}{13}
+\indexentry{familia!casi ajena sobre $N$}{13}
+\indexentry{familia!casi ajena sobre $N$!maximal en $N$}{14}
+\indexentry{familia!casi ajena!maximal}{14}
+\indexentry{familia!de!sucesiones en $D$ convergentes a $A$}{19}
+\indexentry{familia!de!ramas de $X$ en $2^\omega$}{20}
+\indexentry{cardinal! de casi ajenidad}{21}
+\indexentry{casi!ajenidad, cardinal de}{21}
+\indexentry{ideal generado por $\ms{A}$}{21}
+\indexentry{parte!positiva de $\ms{A}$}{21}
+\indexentry{traza de $\ms{A}$ en $X$}{23}
+\indexentry{familia!maximal en alguna parte}{23}
+\indexentry{familia!maximal en ninguna parte}{23}
+\indexentry{Dočkálková!Lema de}{27}
+\indexentry{Lema!de Dočkálková}{27}
+\indexentry{Simon!Teorema de}{28}
+\indexentry{Teorema!de Simon}{28}
+\indexentry{particionador}{29}
+\indexentry{grieta}{29}
+\indexentry{grieta!separada}{29}
+\indexentry{grieta!contenida en una familia}{29}
+\indexentry{familia!que contiene a una grieta}{29}
+\indexentry{familia!de Luzin}{31}
+\indexentry{Luzin!familia de}{31}
+\indexentry{familia!inseparable}{32}
+\indexentry{orden!basado en $\ms{A}$}{33}
+\indexentry{Lema!de Solovay}{35}
+\indexentry{Solovay!Lema de}{35}
+\indexentry{topología!de Mrówka}{38}
+\indexentry{topología!de Isbell-Mrówka}{38}
+\indexentry{Mrówka! topología de}{38}
+\indexentry{Isbell-Mrówka!topología de}{38}
+\indexentry{$\Psi$-espacio}{38}
+\indexentry{espacio!,$\Psi$}{38}
+\indexentry{$\Psi$-espacio}{38}
+\indexentry{espacio!,$\Psi$}{38}
+\indexentry{base!local!estándar de $x$ en $\Psi_N(\ms{A})$}{39}
+\indexentry{base!estándar de $\Psi_N(\ms{A})$}{39}
+\indexentry{espacio!de Mrówka}{41}
+\indexentry{Mrówka!espacio de}{41}
+\indexentry{espacio!de Isbell-Mrówka}{41}
+\indexentry{Isbell-Mrówka!espacio de}{41}
+\indexentry{Kannan!Teorema de Rajagopalan y}{49}
+\indexentry{Rajagopalan!Teorema de Kannan y}{49}
+\indexentry{Teorema! de Kannan y Rajagopalan}{49}
+\indexentry{compacto!de Franklin}{59}
+\indexentry{Franklin! compacto de}{59}
+\indexentry{familia!no compacta}{59}
+\indexentry{Conjetura!de Moore}{69}
+\indexentry{Conjetura!débil de Moore}{69}
+\indexentry{Moore!conjetura de}{69}
+\indexentry{Moore!conjetura débil de}{69}
+\indexentry{$Q$-set}{72}
