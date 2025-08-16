@@ -1,0 +1,253 @@
+\begin{theindex}
+
+  \item $Q$-set, 70
+  \item $\Psi$-espacio, 38
+
+  \indexspace
+
+  \item anticadena, 2
+  \item Axioma
+    \subitem de Martin, 10
+
+  \indexspace
+
+  \item base, 8
+    \subitem de vecindades, 8
+    \subitem estándar de $\Psi_N(\ms{A})$, 39
+    \subitem local, 8
+      \subsubitem estándar de $x$ en $\Psi_N(\ms{A})$, 39
+
+  \indexspace
+
+  \item cadena, 2
+  \item Cantor
+    \subitem Teorema de, 6
+  \item cardinal, 5
+    \subitem  de casi ajenidad, 20
+    \subitem exponenciación, 5
+    \subitem producto, 5
+    \subitem producto general, 5
+    \subitem suma, 5
+    \subitem suma general, 5
+  \item cardinalidad, 5
+  \item casi
+    \subitem ajena sobre $N$, familia, 13
+    \subitem ajena, familia, 13
+    \subitem ajenidad, cardinal de, 20
+    \subitem ajeno, 13
+  \item clase, 1
+    \subitem conjunto, 1
+    \subitem propia, 1
+  \item compacto
+    \subitem de Franklin, 57
+  \item Conjetura
+    \subitem de Moore, 67
+    \subitem débil de Moore, 67
+  \item conjunto
+    \subitem a lo más numerable, 5
+    \subitem abierto, 8
+    \subitem cerrado, 8
+    \subitem denso, 8
+    \subitem finito, 5
+    \subitem infinito, 5
+    \subitem más que numerable, 5
+    \subitem no numerable, 5
+    \subitem numerable, 5
+
+  \indexspace
+
+  \item Dočkálková
+    \subitem Lema de, 26
+
+  \indexspace
+
+  \item elementos
+    \subitem comparables, 2
+    \subitem compatibles, 2
+    \subitem incomparables, 2
+    \subitem incompatibles, 2
+  \item encaje, 8
+  \item enumeración
+    \subitem Teorema de, 5
+  \item espacio, 8
+    \subitem ,$\Psi$, 38
+    \subitem de Isbell-Mrówka, 41
+    \subitem de Mrówka, 41
+    \subitem topológico, 8
+
+  \indexspace
+
+  \item familia
+    \subitem casi ajena, 13
+      \subsubitem maximal, 14
+    \subitem casi ajena sobre $N$, 13
+      \subsubitem maximal en $N$, 14
+    \subitem de
+      \subsubitem ramas de $X$ en $2^\omega$, 20
+      \subsubitem sucesiones en $D$ convergentes a $A$, 19
+    \subitem de Luzin, 30
+    \subitem inseparable, 31
+    \subitem maximal en alguna parte, 23
+    \subitem maximal en ninguna parte, 23
+    \subitem no compacta, 57
+    \subitem que contiene a una grieta, 29
+  \item filtro, 10
+    \subitem $\ms{D}$-genérico, 10
+    \subitem genérico, 10
+    \subitem propio, 10
+  \item Franklin
+    \subitem  compacto de, 57
+  \item funcional, 4
+  \item función
+    \subitem continua, 8
+    \subitem creciente, 3
+    \subitem decreciente, 3
+    \subitem homeomorfismo, 8
+
+  \indexspace
+
+  \item grieta, 29
+    \subitem contenida en una familia, 29
+    \subitem separada, 29
+
+  \indexspace
+
+  \item Hausdorff
+    \subitem Principio de Maximalidad de, 3
+
+  \indexspace
+
+  \item ideal, 10
+    \subitem propio, 10
+  \item ideal generado por $\ms{A}$, 21
+  \item Isbell-Mrówka
+    \subitem espacio de, 41
+    \subitem topología de, 38
+  \item isomorfismo(de orden), 3
+
+  \indexspace
+
+  \item Kannan
+    \subitem Teorema de Rajagopalan y, 49
+  \item König
+    \subitem Lema de, 6
+
+  \indexspace
+
+  \item Lema
+    \subitem de Dočkálková, 26
+    \subitem de König, 6
+    \subitem de Solovay, 34
+  \item Luzin
+    \subitem familia de, 30
+
+  \indexspace
+
+  \item Martin
+    \subitem Axioma de, 10
+  \item Moore
+    \subitem conjetura de, 67
+    \subitem conjetura débil de, 67
+  \item morfismo (de orden), 3
+  \item Mrówka
+    \subitem  topología de, 38
+    \subitem espacio de, 41
+
+  \indexspace
+
+  \item natural, 3
+
+  \indexspace
+
+  \item operador
+    \subitem clausura, 8
+    \subitem derivado, 8
+    \subitem exterior, 8
+    \subitem frontera, 8
+    \subitem interior, 8
+  \item orden
+    \subitem \textit{c.c.c.}, 10
+    \subitem basado en $\ms{A}$, 32
+    \subitem bien fundado, 3
+    \subitem bueno, 3
+    \subitem completo, 3
+    \subitem isomorfo a otro, 3
+    \subitem total, 3
+  \item ordinal, 3
+    \subitem cero, 3
+    \subitem exponenciación, 5
+    \subitem límite, 3
+    \subitem producto, 5
+    \subitem sucesor, 3
+    \subitem suma, 5
+
+  \indexspace
+
+  \item parte
+    \subitem positiva de $\ms{A}$, 21
+  \item particionador, 29
+  \item Principio
+    \subitem de Maximalidad de Hausdorff, 3
+  \item producto
+    \subitem de Tychonoff, 9
+    \subitem topológico, 9
+  \item propiedad
+    \subitem débilmente hereditaria, 9
+    \subitem factorizable, 9
+    \subitem finitamente productiva, 9
+    \subitem hereditaria, 9
+    \subitem productiva, 9
+    \subitem topológica, 9
+  \item punto
+    \subitem aislado, 8
+    \subitem de acumulación, 8
+
+  \indexspace
+
+  \item Rajagopalan
+    \subitem Teorema de Kannan y, 49
+
+  \indexspace
+
+  \item Simon
+    \subitem Teorema de, 27
+  \item Solovay
+    \subitem Lema de, 34
+  \item subbase, 8
+  \item subconjunto
+    \subitem denso (de un orden parcial), 10
+    \subitem denso bajo $p$ (de un orden parcial), 10
+  \item subespacio, 8
+  \item suma topológica, 9
+
+  \indexspace
+
+  \item Teorema
+    \subitem  de Kannan y Rajagopalan, 49
+    \subitem de Cantor, 6
+    \subitem de enumeración, 5
+    \subitem de Inducción transfinita, 4
+    \subitem de la suma cardinal, 6
+    \subitem de Recursión transfinita, 4
+    \subitem de Simon, 27
+    \subitem del producto cardinal, 6
+  \item topología, 8
+    \subitem de Isbell-Mrówka, 38
+    \subitem de Mrówka, 38
+    \subitem de subespacio, 8
+  \item transfinita
+    \subitem Inducción, 4
+    \subitem Recursión, 4
+  \item traza de $\ms{A}$ en $X$, 23
+
+  \indexspace
+
+  \item vecindad, 8
+
+  \indexspace
+
+  \item árbol, 7
+    \subitem orden de un elemento de un, 7
+    \subitem rama de un, 7
+
+\end{theindex}
