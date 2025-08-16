@@ -1,9 +1,9 @@
-\documentclass[a5paper,DIV=12,11pt]{scrbook}
+\documentclass[letterpaper,DIV=11,11pt]{scrbook}
 \usepackage[spanish,mexico,shorthands=off,es-lcroman]{babel}
 \usepackage{scrlayer-scrpage}
 \input{../resources/koma.tex}
 
-%Utilidades (cargar antes de las fuentes)
+%Utilidades
 \usepackage{amsthm}
 \usepackage{array}
 \usepackage{multicol}
@@ -11,9 +11,8 @@
 \usepackage{graphicx}
 \usepackage[x11names]{xcolor}
 \usepackage{lipsum}
+%\usepackage{amssymb}
 %\usepackage{mathtools}
-\usepackage{mathrsfs}
-\usepackage{amssymb}
 
 %Fuente del documento
 \usepackage{fontspec}
@@ -27,7 +26,7 @@
 \setmathfont{STIXTwoMath-Regular.ttf}[
     Path = ../fonts/StixTwo/
 ]
-\allowdisplaybreaks
+\usepackage{mathrsfs}
 
 %Referencias, Bibliografía e Índices
 %\usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
