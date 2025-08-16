@@ -23,18 +23,18 @@
   \newmdtheoremenv[style=caja1]{ejemplo}[definicion]{Ejemplo}
   \newmdtheoremenv[style=caja1]{consideracion}[definicion]{Consideración}
   \newmdtheoremenv[style=caja1, innertopmargin=12pt]{teorema}[definicion]{Teorema}
-
-    %Entorno proof
-    \renewcommand\qedsymbol{$\blacksquare$}
-    \makeatletter
-        \renewenvironment{proof}[1][]{%
-            \par\pushQED{\qed}%
-            \normalfont\topsep6pt \partopsep0pt % espacio antes del entorno
-            \trivlist
-            \item[\hskip\labelsep
-                    \textbf{\textit{Demostración.}}% Cambiado aquí
-            ]#1
-            }{%
-            \popQED\endtrivlist\@endpefalse
-        }
-    \makeatother
+  
+  %Entorno proof
+  %  \renewcommand\qedsymbol{$\blacksquare$}
+  %  \makeatletter
+  %      \renewenvironment{proof}[1][]{%
+  %          \par\pushQED{\qed}%
+  %          \normalfont\topsep6pt \partopsep0pt % espacio antes del entorno
+  %          \trivlist
+  %          \item[\hskip\labelsep
+  %                  \textbf{\textit{Demostración.}}% Cambiado aquí
+  %          ]#1
+  %          }{%
+  %          \popQED\endtrivlist\@endpefalse
+  %      }
+  %  \makeatother
