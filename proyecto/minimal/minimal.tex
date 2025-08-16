@@ -11,13 +11,6 @@
     \usepackage{graphicx}
     \usepackage[x11names]{xcolor}
     \usepackage{lipsum}
-%Figuras con TikZ
-    \usepackage{tikz}
-    \usetikzlibrary{math,cd,calc,babel,shadows}
-%Etiquetas de las enumeraciones
-    \usepackage[shortlabels]{enumitem}
-    \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
-    \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
 %Fuentes del documento
     \usepackage{fontspec}
     \setmainfont{GFSArtemisia.otf}[
@@ -41,6 +34,13 @@
         \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
         \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
         \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
+%Figuras con TikZ
+    \usepackage{tikz}
+    \usetikzlibrary{math,cd,calc,babel,shadows}
+%Etiquetas de las enumeraciones
+    \usepackage[shortlabels]{enumitem}
+    \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
+    \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
 %Cajas de Teoremas
     \usepackage{thmtools}
     \usepackage[framemethod=TikZ]{mdframed}
@@ -49,13 +49,13 @@
     \input{../resources/comandos.tex}
 
 %Exclusivo del minimal
-    \renewcommand{\label}[1]{}
-    \renewcommand{\ref}[1]{REF}
-    \renewcommand{\autoref}[1]{REF}
+    %\renewcommand{\label}[1]{}
+    %\renewcommand{\ref}[1]{REF}
+    %\renewcommand{\autoref}[1]{REF}
 
 \begin{document}
 
-    \input{../chapters/c1.tex}
+    \input{../chapters/c0.tex}
 
     \printindex[trad]
     \printindex[sym]
