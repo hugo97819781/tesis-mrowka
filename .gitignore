@@ -6,3 +6,6 @@
 *.ilg
 *.bcf
 *.run.xml
+*.idx
+*.ind
+*.bbl
