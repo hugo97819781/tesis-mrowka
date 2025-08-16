@@ -1,6 +1,8 @@
 *.aux
 *.log
 *.synctex.gz
+*.synctex
+*.synctex(busy)
 *.toc
 *.gz
 *.ilg
@@ -9,4 +11,7 @@
 *.idx
 *.ind
 *.bbl
+*.bbl-SAVE-ERROR
 *.blg
+*.fls
+*.fdb_latexmk
