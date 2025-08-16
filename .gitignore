@@ -3,3 +3,6 @@
 *.synctex.gz
 *.toc
 *.gz
+*.ilg
+*.bcf
+*.run.xml
