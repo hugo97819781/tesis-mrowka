@@ -23,7 +23,13 @@
     \setmathfont{STIXTwoMath-Regular.ttf}[
         Path = ../fonts/StixTwo/
     ]
+    \newfontfamily\opfont{STIXTwoText-Regular.ttf}[
+        Path = ../fonts/StixTwo/
+    ]
+    %\newfontfamily\opfont{../fonts/StixTwo/STIXTwoText-Regular.ttf}
+
     \usepackage{mathrsfs}
+    \usepackage{amsmath}
 %Referencias, Bibliografía e Índices
     \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
     \usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
@@ -55,7 +61,12 @@
 
 \begin{document}
 
-    \input{../chapters/c1.tex}
+    \input{../chapters/c0.tex}
+
+    \newpage
+
+    \chapter{Prueba Adicional}
+    \input{../resources/placeholder.tex}
 
     \printindex[trad]
     \printindex[sym]

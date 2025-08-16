@@ -21,6 +21,10 @@
 	\newcommand{\mysetminus}{\mathbin{\mathchoice{\mysetminusD}{\mysetminusT}{\mysetminusS}{\mysetminusSS}}}
 	\renewcommand{\setminus}{\mysetminus}
 %OPERADORES
+	\makeatletter
+		\renewcommand{\operator@font}{\opfont}
+	\makeatother
+
 	\DeclareMathOperator{\inte}{int}
 	\DeclareMathOperator{\ext}{ext}
 	\DeclareMathOperator{\cla}{cl}
