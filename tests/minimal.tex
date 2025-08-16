@@ -1,66 +1,65 @@
-\documentclass[letterpaper,DIV=11,11pt]{scrbook}
+%Formato e idioma
+\documentclass[letterpaper,DIV=12,12pt]{scrbook}
 \usepackage[spanish,mexico,shorthands=off,es-lcroman]{babel}
 \usepackage{scrlayer-scrpage}
 \input{../resources/koma.tex}
-
 %Utilidades
-\usepackage{amsthm}
-\usepackage{array}
-\usepackage{multicol}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage[x11names]{xcolor}
-\usepackage{lipsum}
-%\usepackage{amssymb}
-%\usepackage{mathtools}
-
-%Fuente del documento
-\usepackage{fontspec}
-\setmainfont{GFSArtemisia.otf}[
-    Path = ../fonts/GFSArtemisia/,
-    BoldFont = GFSArtemisiaBold.otf,
-    ItalicFont = GFSArtemisiaIt.otf,
-    BoldItalicFont = GFSArtemisiaBoldIt.otf
-]
-\usepackage{unicode-math}
-\setmathfont{STIXTwoMath-Regular.ttf}[
-    Path = ../fonts/StixTwo/
-]
-\usepackage{mathrsfs}
-
-%Referencias, Bibliografía e Índices
-%\usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
-%\usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
-%\usepackage{csquotes,url}
-    %\addbibresource{referencias.bib}
-
-%\usepackage{imakeidx}
-    %\makeindex[columns=1, intoc, title=PRUEBA]
-    %\makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
-    %\makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
-    %\makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
-
+    \usepackage{amsthm}
+    \usepackage{array}
+    \usepackage{multicol}
+    \usepackage{float}
+    \usepackage{graphicx}
+    \usepackage[x11names]{xcolor}
+    \usepackage{lipsum}
 %Figuras con TikZ
-\usepackage{tikz}
-\usetikzlibrary{math,cd,calc,babel,shadows}
-
+    \usepackage{tikz}
+    \usetikzlibrary{math,cd,calc,babel,shadows}
 %Etiquetas de las enumeraciones
-\usepackage[shortlabels]{enumitem}
-\setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
-\setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
-
+    \usepackage[shortlabels]{enumitem}
+    \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
+    \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
+%Fuentes del documento
+    \usepackage{fontspec}
+    \setmainfont{GFSArtemisia.otf}[
+        Path = ../fonts/GFSArtemisia/,
+        BoldFont = GFSArtemisiaBold.otf,
+        ItalicFont = GFSArtemisiaIt.otf,
+        BoldItalicFont = GFSArtemisiaBoldIt.otf
+    ]
+    \usepackage{unicode-math}
+    \setmathfont{STIXTwoMath-Regular.ttf}[
+        Path = ../fonts/StixTwo/
+    ]
+    \usepackage{mathrsfs}
+%Referencias, Bibliografía e Índices
+    \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
+    \usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
+    \usepackage{csquotes,url}
+        \addbibresource{../chapters/referencias.bib}
+    \usepackage{imakeidx}
+        \makeindex[columns=1, intoc, title=PRUEBA]
+        \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
+        \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
+        \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
 %Cajas de Teoremas
-\usepackage{thmtools}
-\usepackage[framemethod=TikZ]{mdframed}
-\input{../resources/cajas.tex}
-
+    \usepackage{thmtools}
+    \usepackage[framemethod=TikZ]{mdframed}
+    \input{../resources/cajas-minimal.tex}
 %Comandos Creados
 \input{../resources/comandos.tex}
 
+%Exclusivo del minimal
+    \renewcommand{\label}[1]{}
+    \renewcommand{\ref}[1]{REF}
+    \renewcommand{\autoref}[1]{REF}
+
 \begin{document}
 
-    Esto son tests. \newpage
+    \input{../chapters/c0.tex}
 
-    \input{../resources/placeholder.tex}
+    \printindex[trad]
+    \printindex[sym]
+	\printindex[alph]
+    \printbibliography[heading=bibintoc, title={Referencias}]
 
 \end{document}
