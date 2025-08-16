@@ -10,8 +10,37 @@
 %Matemáticos
     \usepackage{amsmath}
     \usepackage{amsthm}
+
+%Fuentes del documento
+    %\usepackage{fontspec}
+    %\setmainfont{GFSArtemisia.otf}[
+    %    Path = ../fonts/GFSArtemisia/,
+    %    BoldFont = GFSArtemisiaBold.otf,
+    %    ItalicFont = GFSArtemisiaIt.otf,
+    %    BoldItalicFont = GFSArtemisiaBoldIt.otf
+    %]
+    %\usepackage{unicode-math}
+    %\setmathfont{STIXTwoMath-Regular.ttf}[
+    %    Path = ../fonts/StixTwo/
+    %]
+    %\newfontfamily\opfont{STIXTwoMath-Regular.ttf}[
+    %    Path = ../fonts/StixTwo/
+    %]
+    %\newfontfamily\opfont{../fonts/StixTwo/STIXTwoText-Regular.ttf}
     \usepackage{amssymb} % eliminar si se usa unicode-math
     \usepackage{mathrsfs} % agregar después de fuente unicode-math, si se usa
+
+%Referencias, Bibliografía e Índices
+    %\usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
+    %\usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
+    %\usepackage{csquotes,url}
+    %    \addbibresource{../chapters/referencias.bib}
+    %\usepackage{imakeidx}
+    %    \makeindex[columns=1, intoc, title=PRUEBA]
+    %    \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
+    %    \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
+    %    \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
+
 %Etiquetas de las enumeraciones
     \usepackage[shortlabels]{enumitem}
     \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
@@ -23,7 +52,9 @@
     \input{../resources/cajas-minimal.tex}
 %Comandos Creados
     \input{../resources/comandos.tex}
+
 %Exclusivo del minimal
+    %\renewcommand{\label}[1]{}
     \renewcommand{\ref}[1]{??}
     \renewcommand{\pageref}[1]{??}
     \newcommand{\autoref}[1]{??}
@@ -35,20 +66,33 @@
 
 \begin{document}
 \pagestyle{empty}
+
     \frontmatter
+
     \input{../portada/portada.tex}
+
     \chapter*{Agradecimientos}
     \thispagestyle{empty}
 	\input{../chapters/a0-agradecimientos.tex}
+
     \tableofcontents
+
     \thispagestyle{empty}
     \chapter*{Introducción}
     \addcontentsline{toc}{chapter}{Introducción}
     \input{../chapters/a1-introduccion.tex}
+
     \mainmatter
     \input{../chapters/c0.tex}
     \input{../chapters/c1.tex}
     \input{../chapters/c2.tex}
     \input{../chapters/c3.tex}
     \input{../chapters/c4.tex}
+
+    %\printindex[trad]								% Índice de Traducciones
+    %\printindex[sym]								% Índice Simbólico y Alfabético
+	%\printindex[alph]
+	
+    %\printbibliography[heading=bibintoc, title={Referencias}]
+
 \end{document}
