@@ -11,7 +11,7 @@
 	%\DeclarePairedDelimiterX\Par[1]\langle\rangle{\renewcommand\given{\SetSymbol[\delimsize]}#1}
 	%\DeclarePairedDelimiterX\Bra[1](){#1}
 %RENOVACIÓN DE COMANDOS
-	\renewcommand{\emptyset}{\varnothing}
+	%\renewcommand{\emptyset}{\varnothing}
 	\renewcommand{\tau}{\ms{T}}
 	%Nuevo "Setminus"
 	\newcommand{\mysetminusD}{\hbox{\tikz{\draw[line width=0.6pt,line cap=round] (3pt,0) -- (0,6pt);}}}
@@ -21,9 +21,9 @@
 	\newcommand{\mysetminus}{\mathbin{\mathchoice{\mysetminusD}{\mysetminusT}{\mysetminusS}{\mysetminusSS}}}
 	\renewcommand{\setminus}{\mysetminus}
 %OPERADORES
-	\makeatletter
-		\renewcommand{\operator@font}{\opfont}
-	\makeatother
+	%\makeatletter
+	%	\renewcommand{\operator@font}{\opfont}
+	%\makeatother
 
 	\DeclareMathOperator{\inte}{int}
 	\DeclareMathOperator{\ext}{ext}
