@@ -1,0 +1,67 @@
+\indexentry{$\zfc$}{1}
+\indexentry{$\Ac$}{1}
+\indexentry{$\mapsto$}{2}
+\indexentry{$p \parallel q$}{2}
+\indexentry{$p \perp q$}{2}
+\indexentry{$(P,<) \cong (Q,\sqsubset)$}{3}
+\indexentry{$\OR$}{3}
+\indexentry{$\omega$}{3}
+\indexentry{$0$ (cero)}{3}
+\indexentry{$\alpha < \beta$}{3}
+\indexentry{$\alpha+1$}{3}
+\indexentry{$F:\mathcal{C} \to \mathcal{C}'$}{4}
+\indexentry{$\alpha + \beta$}{5}
+\indexentry{$\alpha \cdot \beta$}{5}
+\indexentry{$\alpha ^ \beta$}{5}
+\indexentry{$|X|$}{5}
+\indexentry{$\CAR$}{5}
+\indexentry{$\kappa + \lambda$}{6}
+\indexentry{$\kappa \cdot \lambda$}{6}
+\indexentry{$\kappa ^ \lambda$}{6}
+\indexentry{$\sum_{\alpha \in I} \kappa_\alpha$}{6}
+\indexentry{$\prod_{\alpha \in I} \kappa_\alpha$}{6}
+\indexentry{$\aleph_\alpha$}{7}
+\indexentry{$\omega_\alpha$}{7}
+\indexentry{$[X]^\kappa$}{7}
+\indexentry{$[X]^{<\kappa}$}{7}
+\indexentry{$[X]^{\leq \kappa}$}{7}
+\indexentry{$[X]^{> \kappa}$}{7}
+\indexentry{$[X]^{\geq \kappa}$}{7}
+\indexentry{$X^\kappa$}{7}
+\indexentry{$X^{<\kappa}$}{7}
+\indexentry{$<_x$}{7}
+\indexentry{$o(x)$}{7}
+\indexentry{$h(T,\leq)$}{7}
+\indexentry{$\inte(A)$}{9}
+\indexentry{$\cla(A)$}{9}
+\indexentry{$\ext(A)$}{9}
+\indexentry{$\fron(A)$}{9}
+\indexentry{$\der(A)$}{9}
+\indexentry{$\Ma(\kappa)$}{11}
+\indexentry{$\Ma$}{11}
+\indexentry{$\mathfrak{m}$}{12}
+\indexentry{$\Ad(N)$}{13}
+\indexentry{$\Mad(N)$}{14}
+\indexentry{$\Phi_h$}{15}
+\indexentry{$\ms{A}_{D,A}$}{19}
+\indexentry{$\ms{A}_X$}{21}
+\indexentry{$\mathfrak{a}$}{21}
+\indexentry{$\ms{I}_N(\ms{A})$}{22}
+\indexentry{$\ms{I}_N^+(\ms{A})$}{22}
+\indexentry{$\ms{I}(\ms{A})$}{22}
+\indexentry{$\ms{I}^+(\ms{A})$}{22}
+\indexentry{$\ms{A} \upharpoonright X$}{24}
+\indexentry{$\mathbb{P}_\ms{A}$}{34}
+\indexentry{$\leq_\ms{A}$}{34}
+\indexentry{$D_a$ (si $a \in \ms{A}$)}{34}
+\indexentry{$D_G$ (si $\mathcal{G} \subseteq \mathbb{P}_\ms{A}$)}{34}
+\indexentry{$\tau_{N,\ms{A}}$}{40}
+\indexentry{$\tau_\ms{A}$}{40}
+\indexentry{$\Psi_N(\ms{A})$}{40}
+\indexentry{$\Psi(\ms{A})$}{40}
+\indexentry{$\Psi_N(\ms{A})$}{40}
+\indexentry{$\mathcal{B}_x$}{41}
+\indexentry{$\mathcal{B}_\ms{A}$}{41}
+\indexentry{$\ms{F}(\ms{A})$}{61}
+\indexentry{$\Pm$}{71}
+\indexentry{$\Pdm$}{71}
