@@ -16,13 +16,15 @@
 	\cfoot{\footnotesize \pagemark}
 }
 
-\makeatletter
-\renewcommand{\chapter}{%
-	\if@openright\cleardoublepage\else\clearpage\fi
-	\thispagestyle{beginstyle} % Página sin numeración
-	\secdef\@chapter\@schapter
-}
-\makeatother
+\renewcommand*{\chapterpagestyle}{beginstyle}
+
+%\makeatletter
+%\renewcommand{\chapter}{%
+	%\if@openright\cleardoublepage\else\clearpage\fi
+	%\thispagestyle{beginstyle} % Página sin numeración
+	%\secdef\@chapter\@schapter
+%}
+%\makeatother
 
 \addtokomafont{chapter}{\rmfamily}
 \addtokomafont{section}{\rmfamily}

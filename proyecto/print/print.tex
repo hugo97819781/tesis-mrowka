@@ -57,30 +57,51 @@
 \pagestyle{empty}
 
     \frontmatter
+        \pagestyle{empty}
+        \input{../resources/cover.tex}
+        
+        \cleardoublepage
+        \vspace*{3cm}
+        \begin{flushright}
+            \textit{Una frase bien cool acá}. \\
+            - Don Juan.
+        \end{flushright}
+        \cleardoublepage
 
-    \input{../resources/cover.tex}
 
-    \chapter*{Agradecimientos}
-    \thispagestyle{empty}
-	\input{../chapters/a0-agradecimientos.tex}
+        \chapter*{Agradecimientos}
+        \thispagestyle{empty}
+        \input{../chapters/a0-agradecimientos.tex}
 
-    \tableofcontents
-
-    \thispagestyle{empty}
-    \chapter*{Introducción}
-    \addcontentsline{toc}{chapter}{Introducción}
-    \input{../chapters/a1-introduccion.tex}
+        \clearpage
+        \pagestyle{beginstyle}
+        \tableofcontents
+        \chapter*{Introducción}
+        \addcontentsline{toc}{chapter}{Introducción}
+        \input{../chapters/a1-introduccion.tex}
 
     \mainmatter
-    \input{../chapters/c0.tex}
-    \input{../chapters/c1.tex}
-    \input{../chapters/c2.tex}
-    \input{../chapters/c3.tex}
-    \input{../chapters/c4.tex}
+        \cleardoublepage
+        \pagestyle{chapstyle}
 
-    \printindex[trad]								% Índice de Traducciones
-    \printindex[sym]								% Índice Simbólico y Alfabético
-	\printindex[alph]
-    \printbibliography[heading=bibintoc, title={Referencias}]
+        \input{../chapters/c0.tex}
+        \input{../chapters/c1.tex}
+        \input{../chapters/c2.tex}
+        \input{../chapters/c3.tex}
+        \input{../chapters/c4.tex}
+
+        \let\oldchapterpagestyle\chapterpagestyle
+
+        % forzamos empty para la primera página de todos los índices
+        \renewcommand*{\chapterpagestyle}{empty} 
+        \cleardoublepage
+        \pagestyle{empty} \printindex[trad]
+        \cleardoublepage
+        \pagestyle{empty} \printindex[sym]
+        \cleardoublepage
+        \pagestyle{empty} \printindex[alph]
+
+        
+        \printbibliography[heading=bibintoc, title={Referencias}]
 
 \end{document}
