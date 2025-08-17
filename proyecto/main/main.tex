@@ -1,93 +1,115 @@
-\documentclass[a5paper,DIV=12,10pt]{scrbook}
-\usepackage{scrlayer-scrpage}
-\input{../resources/koma.tex}
-
-%Utilidades (cargar antes de las fuentes)
-\usepackage{amsthm}
-\usepackage{array}
-\usepackage{multicol}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage[x11names]{xcolor}
-\usepackage{lipsum}
-
-%Letra Artemisia con Euler (sin warnings)
-    \usepackage[spanish,es-lcroman,mexico]{babel}
-    \usepackage[T1]{fontenc}
-    \usepackage{gfsartemisia}
-    \let\iint\relax
-    \let\iiint\relax
-    \let\iiiint\relax
-    \let\idotsint\relax
-    \usepackage{mathtools}
-    \usepackage{eulervm}
-    %\DeclareMathAlphabet{\mathnormal}{U}{zeuex}{m}{n}
-    \usepackage{mathrsfs}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FORMATO E IDIOMA %%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+    \documentclass[letterpaper,DIV=12,12pt]{scrbook}
+    \usepackage[spanish,mexico,shorthands=off,es-lcroman]{babel}
+    \usepackage{scrlayer-scrpage}
+    \input{../resources/koma.tex}
+%%%%%%%%%%%%%%%%
+%%% PAQUETES %%%
+%%%%%%%%%%%%%%%%
+    \usepackage{array}
+    \usepackage[x11names]{xcolor}
+    \usepackage{lipsum}
+    \usepackage[shortlabels]{enumitem}
+        \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
+        \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FUENTES Y MATEMÁTICAS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \usepackage{fontspec}
+    \setmainfont{GFSArtemisia.otf}[ 
+        Path = ../fonts/GFSArtemisia/,
+        BoldFont = GFSArtemisiaBold.otf,
+        ItalicFont = GFSArtemisiaIt.otf,
+        BoldItalicFont = GFSArtemisiaBoldIt.otf
+    ]
+    \usepackage{amsmath}
+    \usepackage{amsthm}
     \usepackage{amssymb}
+    \usepackage{unicode-math}
+    \setmathfont{STIXTwoMath-Regular.ttf}[
+        Path = ../fonts/StixTwo/,
+    ]
+    \setmathrm{STIXTwoText-Regular.ttf}[
+        Path = ../fonts/StixTwo/,
+        BoldFont = STIXTwoText-Bold.ttf,
+        ItalicFont = STIXTwoText-Italic.ttf,
+        BoldItalicFont = STIXTwoText-BoldItalic.ttf,
+    ]
+    \usepackage{mathrsfs}
+%%%%%%%%%%%%%%%%%%%
+%%% REFERENCIAS %%%
+%%%%%%%%%%%%%%%%%%%
+    \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
+    \usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
+    \usepackage{csquotes,url}
+        \addbibresource{../chapters/referencias.bib}
+%%%%%%%%%%%%%%%
+%%% ÍNDICES %%%
+%%%%%%%%%%%%%%%
+    \usepackage{imakeidx}
+    \usepackage{etoolbox}
+        \makeindex[columns=1, intoc, title=PRUEBA]
+        \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
+        \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
+        \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
+        \indexsetup{firstpagestyle=beginstyle}
+%%%%%%%%%%%%%
+%%% CAJAS %%%
+%%%%%%%%%%%%%
+    \usepackage{thmtools}
+    \usepackage[framemethod=TikZ]{mdframed}
     \allowdisplaybreaks
-
-%Referencias, Bibliografía e Índices
-\usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
-\usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
-\usepackage{csquotes,url}
-    \addbibresource{../chapters/referencias.bib}
-
-\usepackage{imakeidx}
-    \makeindex[columns=1, intoc, title=PRUEBA]
-    \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
-    \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
-    \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
-
-%Figuras con TikZ
-\usepackage{tikz}
-\usetikzlibrary{math,cd,calc,babel,shadows}
-
-%Etiquetas de las enumeraciones
-\usepackage[shortlabels]{enumitem}
-\setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
-\setenumerate[2]{label=\MakeLowercase{\arabic*}), ref=\alph*}
-
-%Cajas de Teoremas
-\usepackage{thmtools}
-\usepackage[framemethod=TikZ]{mdframed}
-\input{../resources/cajas.tex}
-
-%Comandos Creados
-\input{../resources/comandos.tex}
-
+    \input{../resources/cajas-main.tex}
+%%%%%%%%%%%%%%%%
+%%% COMANDOS %%%
+%%%%%%%%%%%%%%%%
+    \renewcommand{\mathbb}[1]{{\symbb{#1}}}
+    \renewcommand{\mathcal}[1]{{\symcal{#1}}}
+    \renewcommand{\mathfrak}[1]{{\symfrak{#1}}}
+    \input{../resources/comandos.tex}
+%%%%%%%%%%%%%%%%%
+%%% DOCUMENTO %%%
+%%%%%%%%%%%%%%%%%
 \begin{document}
+
     \pagestyle{empty}
     \frontmatter
+        \pagestyle{empty}
+        \input{../resources/cover.tex}
+        \input{../chapters/frase.tex}
 
-    \input{../portada/portada.tex}
+        \chapter*{Agradecimientos}
+        \thispagestyle{empty}
+        \input{../chapters/a0-agradecimientos.tex}
 
-    \chapter*{Agradecimientos}
-    \thispagestyle{empty}
-	\input{../chapters/a0-agradecimientos.tex}
-
-    \tableofcontents
-
-    \thispagestyle{empty}
-    \chapter*{Introducción}
-    \addcontentsline{toc}{chapter}{Introducción}
-    \input{../chapters/a1-introduccion.tex}
+        \clearpage
+        \pagestyle{beginstyle}
+        \tableofcontents
+        \chapter*{Introducción}
+        \addcontentsline{toc}{chapter}{Introducción}
+        \input{../chapters/a1-introduccion.tex}
 
     \mainmatter
-    \input{../chapters/c0.tex}
+        \cleardoublepage
+        \pagestyle{chapstyle}
 
-    \input{../chapters/c1.tex}
+        \input{../chapters/c0.tex}
+        \input{../chapters/c1.tex}
+        \input{../chapters/c2.tex}
+        \input{../chapters/c3.tex}
+        \input{../chapters/c4.tex}
 
-    \input{../chapters/c2.tex} % FALTA ESE RESULTADO >:v, lineas 122,214,dem de linea 220,275 referencia a preeliminares
+    \backmatter
+        \cleardoublepage
+        \pagenumbering{alph}
+        \pagestyle{beginstyle}
 
-    \input{../chapters/c3.tex}
+        \printindex[trad]
+        \printindex[sym]
+        \printindex[alph]
 
-    \input{../chapters/c4.tex} 
-    
-    \input{../chapters/z1-notas.tex}
+        \printbibliography[heading=bibintoc, title={Referencias}]
 
-    \printindex[trad]								% Índice de Traducciones
-    \printindex[sym]								% Índice Simbólico y Alfabético
-	\printindex[alph]
-	
-    \printbibliography[heading=bibintoc, title={Referencias}]
 \end{document}

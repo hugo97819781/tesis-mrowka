@@ -42,10 +42,7 @@
 		Sea $f:\Psi_N(\ms{A}) \to \Psi_M(\Phi_h(\ms{A}))$ definida por medio de $f(x)=h(x)$ si $x \in N$ y $f(x)=h[x]$ si $x \in \ms{A}$. Nótese que; por la \autoref{cons-ajenosNyA}, $f$ es biyectiva. Además, por definición de $f$, y como $\Psi_h^{-1}=\Phi_{h^{-1}}$, basta verificar únicamente la continuidad de $f$.
 	
 		Sea $U$ abierto en $\Psi_M(\Phi_h(\ms{A}))$ y supóngase que $x \in f^{-1}[U] \cap \ms{A}$. Entonces $f(x) = h[x] \in U \cap \Phi_h(\ms{A})$. Como $U$ es abierto en $\Psi_M(\Phi_h(\ms{A}))$, entonces $f(x) \setminus U$ es finito. Así que $f^{-1}[f(x) \setminus U] = h^{-1}[h(x)] \setminus f^{-1}[U] = x \setminus f^{-1}[U]$ es finito y así $x \subseteq^* f^{-1}[U]$, probando $f^{-1}[U]$ es abierto en $\Psi_N(\ms{A})$.
-	\end{proof} 
-
-
-	\newpage
+	\end{proof}
 	
 	La siguiente manera de describir la topología de Mrówka es la más cumún en la literatura (como ejemplo están \cite{hruMrowka} o \cite{hruAlmost}).
 
@@ -503,7 +500,7 @@ es aislado, se tiene que $\der(X) \subseteq \ms{A}$. Por otra parte, si $a \in \
 		Por un lado, si $\ms{A} \cup \{\ima(g)\}$ no es casi ajena, existe $A \in \ms{A}$ de modo que $A \cap \ima(g)$ es infinito, y con ello $A \cap B$ es infinito. De otro modo, $\ms{A} \cup \{\ima(g)\} \in S$ y por la construcción de $A$ se tiene $\ms{A} \cup \{\ima(g)\} = \ms{A}$, siendo $A:=\ima(g) \in \ms{A}$ tal que $A \cap B$ es infinito (pues $g$ es subsucesión de $f$). Lo anterior prueba que $\ms{A}$ es maximal sobre $D$. \hfill $\boxtimes$
 	\end{enumerate}
 	
-	Para cada $A \in \ms{A}$ fíjese (\Ac) una sucesión $f_A:\omega \to D$ convergente a $x_A$ en $X$ tal que $A=\ima(f_A)$. Nótese que, como $X$ es de Hausdorff tal elemento $x_A$ es el único al cual $f_A$ converge. Además, dado que los elementos de $\ms{A}$ son casi ajenos dos a dos, y de nuevo por ser $X$ de Hausdorff, cada vez que $A,B \in \ms{A}$ sean distintos, se tendrá que $f_A \neq f_B$ y $x_A \neq x_B$. Defínase la función $p:\Psi_D(\ms{A}) \to X$ como $p(d)=d$ si $d \in D$ y $p(A)=x_A$ si $A \in \ms{A}$, veamos que $p$ es continua y sobreyectiva.
+	Para cada $A \in \ms{A}$ fíjese ($\Ac$) una sucesión $f_A:\omega \to D$ convergente a $x_A$ en $X$ tal que $A=\ima(f_A)$. Nótese que, como $X$ es de Hausdorff tal elemento $x_A$ es el único al cual $f_A$ converge. Además, dado que los elementos de $\ms{A}$ son casi ajenos dos a dos, y de nuevo por ser $X$ de Hausdorff, cada vez que $A,B \in \ms{A}$ sean distintos, se tendrá que $f_A \neq f_B$ y $x_A \neq x_B$. Defínase la función $p:\Psi_D(\ms{A}) \to X$ como $p(d)=d$ si $d \in D$ y $p(A)=x_A$ si $A \in \ms{A}$, veamos que $p$ es continua y sobreyectiva.
 	
 	Sea $U \subseteq X$ abierto en $X$ y supóngase que $A \in p^{-1}[U] \cap \ms{A}$ es cualquiera, entonces $p(A)=x_A \in U$ y $A=\ima(f_A)$. Como $U$ es un abierto de $X$ y $f_A$ converge a $x_A$ en $X$, resulta que $\ima(f_A) \subseteq^* U$ y con ello $A \subseteq^* p^{-1}[U]$; así que $p^{-1}[U]$ es abierto en $\Psi_D(\ms{A})$, y por tanto $p$ es continua.
 	

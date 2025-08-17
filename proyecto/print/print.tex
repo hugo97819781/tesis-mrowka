@@ -19,26 +19,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \usepackage{fontspec}
     \setmainfont{GFSArtemisia.otf}[ 
-    Path = ../fonts/GFSArtemisia/,
-    BoldFont = GFSArtemisiaBold.otf,
-    ItalicFont = GFSArtemisiaIt.otf,
-    BoldItalicFont = GFSArtemisiaBoldIt.otf
+        Path = ../fonts/GFSArtemisia/,
+        BoldFont = GFSArtemisiaBold.otf,
+        ItalicFont = GFSArtemisiaIt.otf,
+        BoldItalicFont = GFSArtemisiaBoldIt.otf
     ]
-
-    % --- Matemáticas ---
-    \usepackage{amsmath}   % fórmulas (solo macros, no mete fuentes)
-    \usepackage{amsthm}    % teoremas
-
-    \usepackage{unicode-math} % control de tipografía matemática
+    \usepackage{amsmath}
+    \usepackage{amsthm}
+    \usepackage{amssymb}
+    \usepackage{unicode-math}
     \setmathfont{STIXTwoMath-Regular.ttf}[
-    Path = ../fonts/StixTwo/,
+        Path = ../fonts/StixTwo/,
+    ]
+    \setmathrm{STIXTwoText-Regular.ttf}[
+        Path = ../fonts/StixTwo/,
+        BoldFont = STIXTwoText-Bold.ttf,
+        ItalicFont = STIXTwoText-Italic.ttf,
+        BoldItalicFont = STIXTwoText-BoldItalic.ttf,
     ]
     \usepackage{mathrsfs}
-    
 %%%%%%%%%%%%%%%%%%%
 %%% REFERENCIAS %%%
 %%%%%%%%%%%%%%%%%%%
-    \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
+    \usepackage[colorlinks=false]{hyperref}
     \usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
     \usepackage{csquotes,url}
         \addbibresource{../chapters/referencias.bib}
@@ -75,15 +78,7 @@
     \frontmatter
         \pagestyle{empty}
         \input{../resources/cover.tex}
-        
-        \cleardoublepage
-        \vspace*{3cm}
-        \begin{flushright}
-            \textit{Una frase bien cool acá}. \\
-            - Don Juan.
-        \end{flushright}
-        \cleardoublepage
-
+        \input{../chapters/frase.tex}
 
         \chapter*{Agradecimientos}
         \thispagestyle{empty}

@@ -3,9 +3,11 @@
 
 \newpairofpagestyles{chapstyle}{
 	\clearpairofpagestyles
-	\rehead{\textbf{\chaptername~\thechapter} \leftmark}
-	\lohead{\textbf{\thesection} \rightmark}
-	\ohead*{\pagemark}
+	\lehead{\textbf{\chaptername~\thechapter} \leftmark}
+	\rohead{\textbf{\thesection} \rightmark}
+	\rehead{\pagemark}
+	\lohead{\pagemark}
+	%\ohead*{\pagemark}
 	\addtokomafont{pagehead}{\normalfont\footnotesize}
 	\KOMAoptions{headsepline=true}
 }
