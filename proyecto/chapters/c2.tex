@@ -93,7 +93,7 @@ Debido a \ref{prop-BaseLocMrowka}, la discusión recién dada prueba el primer i
 \end{proposicion}
 
 \begin{proof}
-	Sea $\ms{A} \subseteq [\omega]^\omega$ cualquiera. El $\Psi$-espacio generado por $\ms{A}$ es separable pues $\omega$ es denso en $\Psi(\ms{A})$ y numerable; además, éste espacio es primero numerable debido al Corolario \ref{cor-NumAxMrowka}.
+	Sea $\ms{A} \subseteq [\omega]^\omega$ cualquiera. El $\Psi$-espacio generado por $\ms{A}$ es separable pues $\omega$ es denso en $\Psi(\ms{A})$ y numerable; además, éste espacio es primero numerable debido al \autoref{cor-NumAxMrowka}.
 
 	(Axioma $\T_1$) Si $x \in \ms{A}$, del \autoref{lem-primerosSubs} se desprende la igualdad $\der(\{x\})=\{y \in \ms{A} \tq \{x\} \cap y \neq^* \emptyset \}=\emptyset$, lo cual implica que $\{x\}$ es cerrado.
 
@@ -108,7 +108,7 @@ Debido a \ref{prop-BaseLocMrowka}, la discusión recién dada prueba el primer i
 	Así pues, para cada $n \in \omega$, la colección $\{\St(x, \mathcal{U}_n) \tq n \in \omega\}$ es base local de $x$. Así que $\{\mathcal{U}_n \tq n \in \omega \}$ es un desarrollo para $\Psi(\ms{A})$.
 \end{proof}
 
-Como se probó recién, todo $\Psi$-espacio es $\T_1$, sin embargo, cuando la familia $\ms{A} \subseteq [\omega]^\omega$ no es casi ajena, el espacio $\Psi(\ms{A})$ no satisface el axioma de separación $\T_2$. Por esta razón, en la literatura se suele dar la definición \ref{Def-Mrowka} partiendo directamente de una familia casi ajena (el lector podrá corroborar esto en textos como \cite{hruMrowka,hruAlmost,kannanHereditarily}).
+Como se probó recién, todo $\Psi$-espacio es $\T_1$, sin embargo, cuando la familia $\ms{A} \subseteq [\omega]^\omega$ no es casi ajena, el espacio $\Psi(\ms{A})$ no satisface el axioma de separación $\T_2$. Por esta razón, en la literatura se suele dar la \autoref{Def-Mrowka} partiendo directamente de una familia casi ajena (el lector podrá corroborar esto en textos como \cite{hruMrowka,hruAlmost,kannanHereditarily}).
 
 \begin{proposicion}\label{prop-tra-casiAjenidad}\index[trad]{cero-dimensionalidad de $\Psi(\ms{A})$}\index[trad]{propiedad de! Tychonoff en $\Psi(\ms{A})$}\index[trad]{propiedad de!Hausdorff en $\Psi(\ms{A})$}
 	Para cualquier $\ms{A}\subseteq [\omega]^\omega$ son equivalentes las siguientes condiciones:
@@ -121,7 +121,7 @@ Como se probó recién, todo $\Psi$-espacio es $\T_1$, sin embargo, cuando la fa
 \end{proposicion}
 
 \begin{proof}
-	(i) $\rightarrow$ (ii) Si $\ms{A}$ es familia casi ajena, como $\Psi(\ms{A})$ es $\T_1$, basta verificar que cada elemento de la base estándar $\ms{B}_\ms{A}$ (definida en el Corolario \ref{cor-NumAxMrowka}) es cerrado. En efecto, cada $\{n\}$ con $n \in \omega$ es cerrado pues $\Psi(\ms{A})$ es $\T_1$. Y dados $x \in \ms{A}$ y $F \subseteq x$ finto, haciendo uso de \ref{lem-primerosSubs} se tiene que por ser $\ms{A}$ familia casi ajena, $\der(\{x\} \cup x \setminus F)=\{x\} \subseteq \{x\} \cup x \setminus F$. Así que $\{x\} \cup x \setminus F$ es cerrado, mostrando que $\Psi(\ms{A})$ es cero-dimensional, pues es $\T_1$ y contiene una base de abiertos y cerrados (\textbf{resultado R)}.
+	(i) $\rightarrow$ (ii) Si $\ms{A}$ es familia casi ajena, como $\Psi(\ms{A})$ es $\T_1$, basta verificar que cada elemento de la base estándar $\ms{B}_\ms{A}$ (definida en el \autoref{cor-NumAxMrowka}) es cerrado. En efecto, cada $\{n\}$ con $n \in \omega$ es cerrado pues $\Psi(\ms{A})$ es $\T_1$. Y dados $x \in \ms{A}$ y $F \subseteq x$ finto, haciendo uso de \ref{lem-primerosSubs} se tiene que por ser $\ms{A}$ familia casi ajena, $\der(\{x\} \cup x \setminus F)=\{x\} \subseteq \{x\} \cup x \setminus F$. Así que $\{x\} \cup x \setminus F$ es cerrado, mostrando que $\Psi(\ms{A})$ es cero-dimensional, pues es $\T_1$ y contiene una base de abiertos y cerrados (\textbf{resultado R)}.
 
 	(ii) $\rightarrow$ (iii) $\rightarrow$ (iv) Si $\Psi(\ms{A})$ es cero-dimensional, al ser espacio $\T_1$, resulta que entonces es espacio de Tychonoff (\textbf{resultado R)}. Por su parte, si $\Psi(\ms{A})$ es de Tychonoff, entonces es de Hausdorff.
 
@@ -195,9 +195,9 @@ La discusión sobre cuántos subespacios compactos \textit{importantes} (esto es
 \begin{proof}
 	La implicación (i) $\rightarrow$ (ii) es evidente.
 
-	(ii) $\rightarrow$ (iii) Supóngase que $\Psi(\ms{A})$ es numerablemente compacto. Dado que $\ms{A} \subseteq \Psi(\ms{A})$ es subespacio cerrado y discreto de $\Psi(\ms{A})$ (véase \ref{lem-primerosSubs}), entonces $\ms{A}$ es numerablemente compacto y discreto; por ello, es finito. De esta forma, $\mathcal{U}:=\big\{ \{n\} \tq n\in \omega \big\} \cup \big\{ \{x\} \cup x \tq x \in \ms{A} \big\}$ es una cubierta numerable para $\Psi(\ms{A})$ y en consecuencia, existe $F \subseteq \omega$ finito de tal modo que la colección $\big \{ \{n\} \tq n \in F \big\} \cup \big\{ \{x\} \cup x \tq x \in \ms{A}\}$ es subcubierta de $\mathcal{U}$. Por ende $\omega \subseteq^* \midcup \ms{A}$, al ser $\ms{A}$ y $F$ finitos. Así, $\ms{A}$ es maximal en virtud del Corolario \ref{cor-MADnecesarioUnion}.
+	(ii) $\rightarrow$ (iii) Supóngase que $\Psi(\ms{A})$ es numerablemente compacto. Dado que $\ms{A} \subseteq \Psi(\ms{A})$ es subespacio cerrado y discreto de $\Psi(\ms{A})$ (véase \ref{lem-primerosSubs}), entonces $\ms{A}$ es numerablemente compacto y discreto; por ello, es finito. De esta forma, $\mathcal{U}:=\big\{ \{n\} \tq n\in \omega \big\} \cup \big\{ \{x\} \cup x \tq x \in \ms{A} \big\}$ es una cubierta numerable para $\Psi(\ms{A})$ y en consecuencia, existe $F \subseteq \omega$ finito de tal modo que la colección $\big \{ \{n\} \tq n \in F \big\} \cup \big\{ \{x\} \cup x \tq x \in \ms{A}\}$ es subcubierta de $\mathcal{U}$. Por ende $\omega \subseteq^* \midcup \ms{A}$, al ser $\ms{A}$ y $F$ finitos. Así, $\ms{A}$ es maximal en virtud del \autoref{cor-MADnecesarioUnion}.
 
-	(iii) $\rightarrow$ (i) Si $\ms{A}$ es finita y maximal, se desprende del Corolario \ref{cor-MADnecesarioUnion} que $\omega \subseteq^* \midcup \ms{A}$. Así, $\Psi(\ms{A}) \cap \omega \subseteq^* \midcup (\Psi(\ms{A}) \cap \ms{A} )$ y $\Psi(\ms{A}) \cap \ms{A} = \ms{A}$ es finito, siguiéndose dela \autoref{prop-Kcaract} la compacidad de $\Psi(\ms{A})$.
+	(iii) $\rightarrow$ (i) Si $\ms{A}$ es finita y maximal, se desprende del \autoref{cor-MADnecesarioUnion} que $\omega \subseteq^* \midcup \ms{A}$. Así, $\Psi(\ms{A}) \cap \omega \subseteq^* \midcup (\Psi(\ms{A}) \cap \ms{A} )$ y $\Psi(\ms{A}) \cap \ms{A} = \ms{A}$ es finito, siguiéndose dela \autoref{prop-Kcaract} la compacidad de $\Psi(\ms{A})$.
 \end{proof}
 
 La siguiente Proposición para nada carece de importancia, pues los espacios de Isbell-Mrówka son los únicos (dentro de cierta clase) con tal propiedad.
@@ -273,7 +273,7 @@ La observación recién hecha da constancia de que falta establecer una relació
 	(iv) $\rightarrow$ (i) Por contrapuesta, supóngase que $f:\Psi(\ms{A}) \to \mathbb{R}$ es continua y no acotada. Entonces; por densidad de $\omega$, para cada $n \in \omega$ se puede fijar $m_n \in \omega \cap f^{-1}[(n,\infty)]$. Así, $B=\{m_n \tq n \in \omega\}$ es infinito, y no admite subsucesiones convergentes en $\Psi(\ms{A})$, pues ningún $C \in [B]^\omega$ tiene imagen no acotada bajo $f$.
 \end{proof}
 
-Combinando \ref{prop-tra-compacidad}, \ref{prop-tra-numerable} y \ref{prop-tra-pseudoCaract} se obtienen ejemplos muy concretos. Por ejemplo, si un espacio de Mrówka $\Psi(\ms{A})$ no es pseudocompacto pero sí es metrizable, necesariamente $\ms{A}$ es numerable. Otro ejemplo responde con una negativa a lo que en su momento fue un problema popular: ¿la pseudocompacidad equivale a la compacidad numerable en espacios Tychonoff?, resultado se sabía cierto en la clase de espacios $\T_4$ (\textbf{Reee R}) y falso dentro de la clase de espacios que no son $\T_1$. En virtud de \ref{prop-tra-compacidad}, y considerando cualquier familia maximal infinita, se obtiene
+Combinando \ref{prop-tra-compacidad}, \ref{prop-tra-numerable} y \ref{prop-tra-pseudoCaract} se obtienen ejemplos muy concretos. Por ejemplo, si un espacio de Mrówka $\Psi(\ms{A})$ no es pseudocompacto pero sí es metrizable, necesariamente $\ms{A}$ es numerable. Otro ejemplo responde con una negativa a lo que en su momento fue un problema popular: ¿la pseudocompacidad equivale a la compacidad numerable en espacios Tychonoff?, resultado se sabía cierto en la clase de espacios $\T_4$ (\textbf{Reee R}) y falso dentro de la clase de espacios que no son $\T_1$. En virtud de \ref{prop-tra-compacidad}, y considerando cualquier familia maximal infinita, se obtiene:
 
 \begin{corolario}\label{cor-EjmPseudoNoNumC}
 	Existe un espacio de Tychonoff, que es pseudocompacto pero no numerablemente compacto.
@@ -300,7 +300,7 @@ La peculiaridad recién comentada, sugiere que todas las familias casi ajenas nu
 
 \section{Teorema de Kannan y Rajagopalan}
 \label{sec-KRTeo}
-La meta primordial en lo que resta del capítulo será caracterizar aquellos espacios que son homeomorfos a algún espacio de Mrówka. Como fue mostrado en la Proposición \ref{prop-MrwokaHLC}, todos los espacios de Mrówka son hereditariamente localmente compactos, una propiedad cuanto menos peculiar. Tal propiedad será la que los caracterizará dentro de la clase de espacios infinitos, de Hausdorff y separables.
+La meta primordial en lo que resta del capítulo será caracterizar aquellos espacios que son homeomorfos a algún espacio de Mrówka. Como fue mostrado en la \autoref{prop-MrwokaHLC}, todos los espacios de Mrówka son hereditariamente localmente compactos, una propiedad cuanto menos peculiar. Tal propiedad será la que los caracterizará dentro de la clase de espacios infinitos, de Hausdorff y separables.
 
 \begin{lema}\label{lem-TKR-Baire}
 	Sea $X$ un espacio de Hausdorff y localmente compacto. Si $X$ contiene un denso $D$, abierto y a lo más numerable, entonces $N:=X \setminus \der(X) \subseteq X$ discreto y denso en $X$.
@@ -349,7 +349,7 @@ La siguiente caracterización es debida a Varadachariar Kannan y a Minakshisunda
 
 	Por otro lado, si $y \in \der(X)$ es cualquiera, $N \cup \{y\} \subseteq X$ es localmente compacto, y por ende, es abierto en su cerradura. Pero $N$ es denso, así que $N \cup \{y\}$ es abierto en $X=\cla(N \cup \{y\})$. Por lo tanto, de \ref{lem-TKR-DerX} se obtiene que $\der(X)$ es discreto.
 
-	(ii) $\rightarrow$ (iii) Supóngase que $X$ es localmente compacto y que $\der(X)$ es discreto. Por el Lema \ref{lem-TKR-DerX} resulta que $N$ es denso en $X$ y que $N \cup \{y\}$ es abierto siempre que $y \in \der(X)$. Por ser $X$ infinito y separable, se tiene que $N$ es numerable. Utilizando la compacidad local de $X$, para cada $x \in \der(X)$ fíjese (utilizando $\Ac$) una vecindad compacta $V_x$ de $x$ en $X$ contenida en $N \cup \{x\}$. Se afirma que $ \ms{A} = \{ V_x \setminus \{x\} \subseteq N \tq x \in \der(X) \} \in \Ad(N) $.
+	(ii) $\rightarrow$ (iii) Supóngase que $X$ es localmente compacto y que $\der(X)$ es discreto. Por el \autoref{lem-TKR-DerX} resulta que $N$ es denso en $X$ y que $N \cup \{y\}$ es abierto siempre que $y \in \der(X)$. Por ser $X$ infinito y separable, se tiene que $N$ es numerable. Utilizando la compacidad local de $X$, para cada $x \in \der(X)$ fíjese (utilizando $\Ac$) una vecindad compacta $V_x$ de $x$ en $X$ contenida en $N \cup \{x\}$. Se afirma que $ \ms{A} = \{ V_x \setminus \{x\} \subseteq N \tq x \in \der(X) \} \in \Ad(N) $.
 
 	En efecto, si $x \in \der(X)$ es cualquiera, entonces $V_x \setminus \{x\}$ no es finito. De lo contrario, $\{x\}= (N \cup \{x\}) \setminus (V_x \setminus \{x\})$ sería abierto en $X$ (que es espacio $\T_1$) y se contradiría que $x \in \der(X)$. Por tanto, $\ms{A} \subseteq [N]^\omega$. Además, si $x,y \in \der(X)$ son distintos, se tiene que $V_x \cap V_y \subseteq N$. Así $V_x \cap V_y$ es subespacio compacto del discreto $N$, lo cual obliga a que sea finito. Como consecuencia, $\ms{A}$ es familia casi ajena en $N$.
 
@@ -445,7 +445,7 @@ Se explotará mucho la siguiente observación durante el subsecuente Corolario, 
 \begin{proof}
 	Sin perder generalidad, tómese $\kappa$ como un cardinal.
 
-	(i) $\to$ (ii) Supóngase que $Y$ es homeomorfo a un espacio de Mrówka, entonces $Y$ es de Hausdorff, Separable y hereditariamente localmente compacto. Todas las propiedades anteriores son factorizables, así que por el por el Teorema de Kannan y Rajagopalan (\ref{teo-HLCCaract}), cada $X_\alpha$ es homeomorfo a un espacio de Mrówka.
+	(i) $\to$ (ii) Supóngase que $Y$ es homeomorfo a un espacio de Mrówka, entonces $Y$ es de Hausdorff, Separable y hereditariamente localmente compacto. Todas las propiedades anteriores son factorizables, así que por el por el Teorema de Kannan y Rajagopalan (\autoref{teo-HLCCaract}), cada $X_\alpha$ es homeomorfo a un espacio de Mrówka.
 
 	Ahora, por contradicción, supóngase $\kappa \geq \omega$. Entonces, existen $P,Q \subseteq \kappa$ ajenos e infinitos, de donde:
 	$$ Y = \prod_{\alpha \in \kappa} X_\alpha \cong \prod_{\alpha \in P} X_\alpha \times \prod_{\alpha \in Q} X_\alpha $$
@@ -462,7 +462,7 @@ Se explotará mucho la siguiente observación durante el subsecuente Corolario, 
 	y a consecuencia del Lema previo, $Y$ es de Mrówka.
 \end{proof}
 
-El siguiente Corolario del Teorema de Kannan y Rajagopalan (\ref{teo-HLCCaract}), es un resultado sencillo (y sumamente particular) de metrización.
+El siguiente Corolario del Teorema de Kannan y Rajagopalan (\autoref{teo-HLCCaract}), es un resultado sencillo (y sumamente particular) de metrización.
 
 \begin{corolario}\label{cor-omegaCuadra}\index[trad]{separabilidad hereditaria de cualquier espacio infinito, separable, de Hausdorff, hereditariamente localmente compacto}
 	Si $X$ es infinito, separable, de Hausdorff y hereditariamente localmente compacto. Entonces son equivalentes:

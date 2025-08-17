@@ -32,7 +32,7 @@ Lo primero a observar es lo siguiente: dado que $\Psi(\ms{A})$ no es compacto, a
 	Sea $\ms{A}$ una familia casi ajena. Entonces el espacio $\ms{F}(\ms{A})$ es de Hausdorff, compacto, normal, localmente compacto, separable y disperso.
 \end{observacion}
 
-Comparando con el Corolario \ref{cor-MrwokaSiempre} con las observaciones recién hechas, vale mencionar que existen propiedades $\ms{F}(\ms{A})$ que tienen una dependencia más compleja con $\Psi(\ms{A})$. Entre ellas, todas las que tengan relación a las sucesiones.
+Comparando con el \autoref{cor-MrwokaSiempre} con las observaciones recién hechas, vale mencionar que existen propiedades $\ms{F}(\ms{A})$ que tienen una dependencia más compleja con $\Psi(\ms{A})$. Entre ellas, todas las que tengan relación a las sucesiones.
 
 \begin{proposicion}\label{prop-caracterFrechet}
 	Sea $\ms{A}$ una familia no compacta. Entonces el carácter de $\infty$ en $\ms{F}(\ms{A})$ es exactamente $\aleph_0 + |\ms{A}|$.
@@ -64,7 +64,7 @@ El próximo Lema es clave por varios motivos; entre ellos, responde a una pregun
 \end{lema}
 
 \begin{proof}
-	(i) Supóngase que $B$ es numerable. Pruébese la suficiencia por contradicción; esto es, asúmase que $B \to \infty$ pero $B \not\subseteq^* \ms{A}$ ($B\cap \ms{A}$ es infinito) y que existe cierto $a \in \ms{A}$ cuya intersección con $B \cap \omega$ es infinita. Como $B\to \infty$ y $a \cap B = a \cap (B \cap \omega) \subseteq B$ es infinito, ocurre que $a \cap B \to \infty$. Sin embargo, $a \cap B \subseteq a$ es infinito y a razón del Lema \ref{lem-convObvia} se tiene que $a \to a$ en $\Psi(\ms{A})$; así mismo en $\ms{F}(\ms{A})$. Lo anterior implica que $a \cap B \to a$ y $a \cap B \to \infty$, siendo esto un absurdo.
+	(i) Supóngase que $B$ es numerable. Pruébese la suficiencia por contradicción; esto es, asúmase que $B \to \infty$ pero $B \not\subseteq^* \ms{A}$ ($B\cap \ms{A}$ es infinito) y que existe cierto $a \in \ms{A}$ cuya intersección con $B \cap \omega$ es infinita. Como $B\to \infty$ y $a \cap B = a \cap (B \cap \omega) \subseteq B$ es infinito, ocurre que $a \cap B \to \infty$. Sin embargo, $a \cap B \subseteq a$ es infinito y a razón del \autoref{lem-convObvia} se tiene que $a \to a$ en $\Psi(\ms{A})$; así mismo en $\ms{F}(\ms{A})$. Lo anterior implica que $a \cap B \to a$ y $a \cap B \to \infty$, siendo esto un absurdo.
 
 	Conversamente, si $B \not\to \infty$, existe un compacto $K \subseteq \Psi(\ms{A})$ de modo que $B \not\subseteq^* U_K$; esto es, $B \cap K$ es infinito. Como $K \cap \ms{A}$ es finito, lo anterior prueba que $B \cap \omega \subseteq (B \cap \omega) \cap K$ es infinito, y así mismo, $B \not\subseteq^* \ms{A}$. Además $C:=(B \cap \omega) \cap K$ es un elemento en $\ms{I}(\ms{A})$; a consecuencia de esto y lo comentado antes de \ref{prop-CaracMADPositiv}, existe cierto $a \in A$ con $C \cap a$ infinito; de donde, $B \cap a$ es infinito.
 
@@ -101,7 +101,7 @@ Si $\ms{A}$ es una familia casi ajena maximal e infinita, entonces la condición
 	Supóngase lo contrario, es decir, $\scl(X) \subseteq^* \omega$. Como cada $B_a \subseteq X$ es convergente, se puede asumir sin pérdida de generalidad que $B_a \subseteq \omega$. En consecuencia de lo anterior, $B_a \subseteq \omega \cap \scl(X)$ y se obtiene del inciso (iii) del Corolario anterior que $B_a \subseteq X$. Así $A \subseteq \scl(X)$ ya que cada $B_a$ satisface $B_a \to a \in A$. Esto muestra que $x \in \scl(\scl(X))=\scl^2(X)$. Es decir, $\scl^3(X) \subseteq \scl^2(X)$ y $\Osq(\ms{F}(\ms{A})) \leq 2$.
 \end{proof}
 
-El posterior Teorema sigue la línea del Teorema de Kannan y Rajagopalan (\ref{teo-HLCCaract}), es una caracterización en propiedades topológicas de ciertos compactos de Franklin.
+El posterior Teorema sigue la línea del Teorema de Kannan y Rajagopalan (\autoref{teo-HLCCaract}), es una caracterización en propiedades topológicas de ciertos compactos de Franklin.
 \begin{teorema}\index[trad]{homeomorfismo con $\ms{F}(\ms{A})$ ($\ms{A}$ maximal)}
 	Sea $X$ un espacio topológico infinito. $X$ es homeomorfo a un compacto de Franklin generado por una familia maximal infinita si y sólo si se satisfacen:
 	\begin{enumerate}
