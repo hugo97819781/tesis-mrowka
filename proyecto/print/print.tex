@@ -1,16 +1,24 @@
-%Formato e idioma
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FORMATO E IDIOMA %%%
+%%%%%%%%%%%%%%%%%%%%%%%%
     \documentclass[letterpaper,DIV=12,12pt]{scrbook}
     \usepackage[spanish,mexico,shorthands=off,es-lcroman]{babel}
     \usepackage{scrlayer-scrpage}
     \input{../resources/koma.tex}
-%Utilidades
+%%%%%%%%%%%%%%%%
+%%% PAQUETES %%%
+%%%%%%%%%%%%%%%%
     \usepackage{array}
     \usepackage[x11names]{xcolor}
     \usepackage{lipsum}
-%Matemáticos
+    \usepackage[shortlabels]{enumitem}
+        \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
+        \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
     \usepackage{amsmath}
     \usepackage{amsthm}
-
+%%%%%%%%%%%%%%%
+%%% FUENTES %%%
+%%%%%%%%%%%%%%%
 %Fuentes del documento
     %\usepackage{fontspec}
     %\setmainfont{GFSArtemisia.otf}[
@@ -29,30 +37,37 @@
     %\newfontfamily\opfont{../fonts/StixTwo/STIXTwoText-Regular.ttf}
     \usepackage{amssymb} % eliminar si se usa unicode-math
     \usepackage{mathrsfs} % agregar después de fuente unicode-math, si se usa
-
-%Referencias, Bibliografía e Índices
+%%%%%%%%%%%%%%%%%%%
+%%% REFERENCIAS %%%
+%%%%%%%%%%%%%%%%%%%
     \usepackage[colorlinks=true, linkcolor=rosa, citecolor=azulC, urlcolor=dorado]{hyperref}
     \usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
     \usepackage{csquotes,url}
         \addbibresource{../chapters/referencias.bib}
+%%%%%%%%%%%%%%%
+%%% ÍNDICES %%%
+%%%%%%%%%%%%%%%
     \usepackage{imakeidx}
+    \usepackage{etoolbox}
         \makeindex[columns=1, intoc, title=PRUEBA]
         \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
         \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
         \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
-
-%Etiquetas de las enumeraciones
-    \usepackage[shortlabels]{enumitem}
-    \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
-    \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
-%Cajas de Teoremas
+        \indexsetup{firstpagestyle=beginstyle}
+%%%%%%%%%%%%%
+%%% CAJAS %%%
+%%%%%%%%%%%%%
     \usepackage{thmtools}
     \usepackage[framemethod=TikZ]{mdframed}
     \allowdisplaybreaks
     \input{../resources/cajas-print.tex}
-%Comandos Creados
+%%%%%%%%%%%%%%%%
+%%% COMANDOS %%%
+%%%%%%%%%%%%%%%%
     \input{../resources/comandos.tex}
-
+%%%%%%%%%%%%%%%%%
+%%% DOCUMENTO %%%
+%%%%%%%%%%%%%%%%%
 \begin{document}
 \pagestyle{empty}
 
@@ -90,18 +105,15 @@
         \input{../chapters/c3.tex}
         \input{../chapters/c4.tex}
 
-        \let\oldchapterpagestyle\chapterpagestyle
+    \backmatter
+        \cleardoublepage
+        \pagenumbering{alph}
+        \pagestyle{beginstyle}
 
-        % forzamos empty para la primera página de todos los índices
-        \renewcommand*{\chapterpagestyle}{empty} 
-        \cleardoublepage
-        \pagestyle{empty} \printindex[trad]
-        \cleardoublepage
-        \pagestyle{empty} \printindex[sym]
-        \cleardoublepage
-        \pagestyle{empty} \printindex[alph]
+        \printindex[trad]
+        \printindex[sym]
+        \printindex[alph]
 
-        
         \printbibliography[heading=bibintoc, title={Referencias}]
 
 \end{document}
