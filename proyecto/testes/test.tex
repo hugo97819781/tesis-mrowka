@@ -1,195 +1,43 @@
-\documentclass[a5paper,DIV=12,10pt]{scrbook}
-\usepackage{scrlayer-scrpage}
-  \clearpairofpagestyles
-  \ohead*{\pagemark}
-  \addtokomafont{pagehead}{\normalfont\footnotesize}
-  \KOMAoptions{headsepline=true}
-  \setlength{\headsep}{6pt}
+\documentclass{scrartcl} % o scrbook/scrreprt
 
-  \makeatletter
-  \renewcommand{\chapter}{%
-    \if@openright\cleardoublepage\else\clearpage\fi
-    \thispagestyle{empty} % Página sin numeración
-    \secdef\@chapter\@schapter
-  }
-  \makeatother
+% --- Texto ---
+\usepackage{fontspec}
+\setmainfont{GFSArtemisia.otf}[
+  Path = ../fonts/GFSArtemisia/,
+  BoldFont = GFSArtemisiaBold.otf,
+  ItalicFont = GFSArtemisiaIt.otf,
+  BoldItalicFont = GFSArtemisiaBoldIt.otf
+]
 
-  \addtokomafont{chapter}{\rmfamily}
-  \addtokomafont{section}{\rmfamily}
-  \addtokomafont{subsection}{\raggedleft\rmfamily}
-  \addtokomafont{subsubsection}{\raggedleft\rmfamily}
-  \addtokomafont{chapterentry}{\rmfamily}
+% --- Matemáticas ---
+\usepackage{amsmath}   % fórmulas (solo macros, no mete fuentes)
+\usepackage{amsthm}    % teoremas
 
-%\KOMAoptions{headsepline=true,footsepline=true}
-  \setlength{\headsep}{5pt}
-  \setlength{\footskip}{20pt}
-  \setlength{\textheight}{450pt}
+\usepackage{unicode-math} % control de tipografía matemática
+\setmathfont{STIXTwoMath-Regular.ttf}[
+  Path = ../fonts/StixTwo/,
+]
+\usepackage{mathrsfs}
 
-%Utilidades (cargar antes de las fuentes)
-\usepackage{amsthm}
-\usepackage{array}
-\usepackage{multicol}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage[x11names]{xcolor}
-\usepackage{lipsum}
-\usepackage{comment}
+\begin{document}
 
-%Utilidades (cargar antes de las fuentes)
-\usepackage{amsthm}
-\usepackage{array}
-\usepackage{multicol}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage[x11names]{xcolor}
-\usepackage{lipsum}
+Texto normal: Hola mundo.
 
-%Letra Artemisia con Euler (sin warnings)
-    \usepackage[spanish,es-lcroman,mexico]{babel}
-    \usepackage[T1]{fontenc}
-    \usepackage{gfsartemisia}
-    \let\iint\relax
-    \let\iiint\relax
-    \let\iiiint\relax
-    \let\idotsint\relax
-    \usepackage{mathtools}
-    \usepackage{eulervm}
-    %\DeclareMathAlphabet{\mathnormal}{U}{zeuex}{m}{n}
-    \usepackage{mathrsfs}
-    \usepackage{amssymb}
-    \allowdisplaybreaks
+Ejemplo matemático:
+\[
+  X_{\mathcal{G}} \subseteq \mathbb{R},\quad
+  f_{\mathfrak{g}} : \mathbb{N} \to \mathbb{C},\quad
+  f_{\mathbb{N}} : \mathbb{N} \to \mathbb{C},\quad
+  f_{\mathscr{A}} : \mathbb{N} \to \mathbb{C},\quad
+  f_{\mathfrak{c}} : \mathbb{N} \to \mathbb{C}
+\]
 
-\usepackage[backend=biber, style=numeric, sortcites, url=true]{biblatex}
-\usepackage{csquotes,url}
-    \addbibresource{../referencias.bib}
+Subíndices bb: \(A_{\symbb{N}},\; D_{\symbb{U}}\).
 
-\usepackage{hyperref}
-\usepackage{imakeidx}
-    \makeindex[columns=1, intoc, title=PRUEBA]
-    \makeindex[name=trad, columns=1, intoc, title=Caracterizaciones]
-    \makeindex[name=sym, columns=3, intoc, title=Índice Simbólico]
-    \makeindex[name=alph, columns=2, intoc, title=Índice Alfabético]
+Subíndices cal: \(A_{\symcal{N}},\; D_{\symcal{G}}\).
 
-%Etiquetas de las enumeraciones
-\usepackage[shortlabels]{enumitem}
-\setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
-\setenumerate[2]{label=\MakeLowercase{\arabic*}), ref=\alph*}
+Subíndices scr: \(A_{\mathscr{A}},\; D_{\mathscr{I}}\).
 
-%Cajas de Teoremas
-\usepackage{thmtools}
-\usepackage[framemethod=TikZ]{mdframed}
+Subíndices frak: \(A_{\symfrak{N}},\; D_{\symfrak{U}}\).
 
-\mdfsetup{innertopmargin=-2pt, innerbottommargin=3pt}
-
-%Estilos de Cajas
-  \mdfdefinestyle{caja1}{
-    roundcorner=5pt,
-    innertopmargin = -0.5ex,
-    linecolor=white
-  }
-
-%Definicion de entornos
-  \newmdtheoremenv[style=caja1]{definicion}{Definición}[section]
-  \newmdtheoremenv[style=caja1]{proposicion}[definicion]{Proposición}
-  \newmdtheoremenv[style=caja1]{lema}[definicion]{Lema}
-  \newmdtheoremenv[style=caja1]{corolario}[definicion]{Corolario}
-  \newmdtheoremenv[style=caja1]{observacion}[definicion]{Observación}
-  \newmdtheoremenv[style=caja1]{ejemplo}[definicion]{Ejemplo}
-  \newmdtheoremenv[style=caja1]{consideracion}[definicion]{Consideración}
-  \newmdtheoremenv[style=caja1, innertopmargin=12pt]{teorema}[definicion]{Teorema}
-
-  \renewcommand\qedsymbol{$\blacksquare$}
-    
-
-  \renewenvironment{proof}{\paragraph{\rmfamily Demostración.}}{\hfill$\blacksquare$}
-
-  \makeatletter
-    \renewenvironment{proof}[1][]{%
-      \par\pushQED{\qed}%
-      \normalfont\topsep6pt \partopsep0pt % espacio antes del entorno
-      \trivlist
-      \item[\hskip\labelsep
-              \textbf{\textit{Demostración.}}% Cambiado aquí
-      ]#1
-      }{%
-      \popQED\endtrivlist\@endpefalse
-    }
-  \makeatother
-  
-%C O M A N D O S
-%GENERALES	
-  \newcommand{\tq}{\text{ $|$ }}
-  \newcommand{\midcup}{\mbox{$\bigcup$}\,}
-  \newcommand{\midcap}{\mbox{$\bigcap$}\,}
-  \newcommand{\ms}[1]{\mathscr{#1}}
-%CONJUNTOS POR COMPRENSIÓN
-  \providecommand\given{}
-  \newcommand\SetSymbol[1][]{\nonscript\:#1\vert\allowbreak\nonscript\:\mathopen{}}
-  \DeclarePairedDelimiterX\Set[1]\{\}{\renewcommand\given{\SetSymbol[\delimsize]}#1}
-  \DeclarePairedDelimiterX\Par[1]\langle\rangle{\renewcommand\given{\SetSymbol[\delimsize]}#1}
-  \DeclarePairedDelimiterX\Bra[1](){#1}
-%RENOVACIÓN DE COMANDOS
-  \renewcommand{\emptyset}{\varnothing}
-  \renewcommand{\tau}{\ms{T}}
-  %Nuevo "Setminus"
-    \newcommand{\mysetminusD}{\hbox{\tikz{\draw[line width=0.6pt,line cap=round] (3pt,0) -- (0,6pt);}}}
-    \newcommand{\mysetminusT}{\mysetminusD}
-    \newcommand{\mysetminusS}{\hbox{\tikz{\draw[line width=0.45pt,line cap=round] (2pt,0) -- (0,4pt);}}}
-    \newcommand{\mysetminusSS}{\hbox{\tikz{\draw[line width=0.4pt,line cap=round] (1.5pt,0) -- (0,3pt);}}}
-    \newcommand{\mysetminus}{\mathbin{\mathchoice{\mysetminusD}{\mysetminusT}{\mysetminusS}{\mysetminusSS}}}
-    \renewcommand{\setminus}{\mysetminus}
-%OPERADORES
-  \DeclareMathOperator{\inte}{int}
-  \DeclareMathOperator{\ext}{ext}
-  \DeclareMathOperator{\cla}{cl}
-  \DeclareMathOperator{\der}{der}
-  \DeclareMathOperator{\fron}{fr}
-  \DeclareMathOperator{\scl}{sqcl}
-  \DeclareMathOperator{\cf}{cf}
-  \DeclareMathOperator{\Id}{Id}
-  \DeclareMathOperator{\ima}{ima}
-  \DeclareMathOperator{\dom}{dom}
-  \DeclareMathOperator{\St}{St}
-  \DeclareMathOperator{\Osq}{O_{sq}}
-
-
-%TEXTOS
-  \newcommand{\T}{\text{\textsf{\small T}}}
-  \newcommand{\AN}{\text{\textsf{\small AN}}}
-  \newcommand{\OR}{\text{\textsf{\small ON}}}
-  \newcommand{\CAR}{\text{\textsf{\small CAR}}}
-  \newcommand{\zfc}{\text{\textsf{\small ZFC}}}
-  \newcommand{\zf}{\text{\textsf{\small ZF}}}
-  \newcommand{\HC}{\text{\textsf{\small HC}}}
-  \newcommand{\Ma}{\text{\textsf{\small MA}}}
-  \newcommand{\Ac}{\text{\textsf{\small AC}}}
-  \newcommand{\Pm}{\text{\textsf{\small MC}}}
-  \newcommand{\Pdm}{\text{\textsf{\small WMC}}}
-  \newcommand{\Ad}{\operatorname{\text{\textsf{\small AD}}}\,}
-  \newcommand{\Mad}{\operatorname{\text{\textsf{\small MAD}}}\,}
-  \newcommand{\Finn}{\operatorname{\text{\textsf{\small fin}}}\,}
-
-% Opcional: Evitar errores por referencias no definidas
-\usepackage{refcount}
-\usepackage{xr}
-  \makeatletter
-    %\newcommand{\fakecite}[1]{[?]}
-    %\renewcommand{\ref}[1]{??}
-    %\renewcommand{\autoref}[1]{PALABRA ??}
-    %\renewcommand{\pageref}[1]{??}
-    %\renewcommand{\cite}[1]{\fakecite{#1}}
-  \makeatother
-
-  \begin{document}
-
-    \tableofcontents
-
-    \input{../chapters/c2.tex}
-
-
-    \printindex[sym]								% Índice Simbólico y Alfabético
-	  \printindex[alph]
-
-    \printbibliography[heading=bibintoc, title={Referencias}]
-
-  \end{document}
+\end{document}

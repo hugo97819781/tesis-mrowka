@@ -14,29 +14,27 @@
     \usepackage[shortlabels]{enumitem}
         \setenumerate[1]{label=\MakeLowercase{\roman*}), ref=\roman*}
         \setenumerate[2]{label=\MakeLowercase{\alph*}), ref=\alph*}
-    \usepackage{amsmath}
-    \usepackage{amsthm}
-%%%%%%%%%%%%%%%
-%%% FUENTES %%%
-%%%%%%%%%%%%%%%
-%Fuentes del documento
-    %\usepackage{fontspec}
-    %\setmainfont{GFSArtemisia.otf}[
-    %    Path = ../fonts/GFSArtemisia/,
-    %    BoldFont = GFSArtemisiaBold.otf,
-    %    ItalicFont = GFSArtemisiaIt.otf,
-    %    BoldItalicFont = GFSArtemisiaBoldIt.otf
-    %]
-    %\usepackage{unicode-math}
-    %\setmathfont{STIXTwoMath-Regular.ttf}[
-    %    Path = ../fonts/StixTwo/
-    %]
-    %\newfontfamily\opfont{STIXTwoMath-Regular.ttf}[
-    %    Path = ../fonts/StixTwo/
-    %]
-    %\newfontfamily\opfont{../fonts/StixTwo/STIXTwoText-Regular.ttf}
-    \usepackage{amssymb} % eliminar si se usa unicode-math
-    \usepackage{mathrsfs} % agregar después de fuente unicode-math, si se usa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FUENTES Y MATEMÁTICAS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \usepackage{fontspec}
+    \setmainfont{GFSArtemisia.otf}[ 
+    Path = ../fonts/GFSArtemisia/,
+    BoldFont = GFSArtemisiaBold.otf,
+    ItalicFont = GFSArtemisiaIt.otf,
+    BoldItalicFont = GFSArtemisiaBoldIt.otf
+    ]
+
+    % --- Matemáticas ---
+    \usepackage{amsmath}   % fórmulas (solo macros, no mete fuentes)
+    \usepackage{amsthm}    % teoremas
+
+    \usepackage{unicode-math} % control de tipografía matemática
+    \setmathfont{STIXTwoMath-Regular.ttf}[
+    Path = ../fonts/StixTwo/,
+    ]
+    \usepackage{mathrsfs}
+    
 %%%%%%%%%%%%%%%%%%%
 %%% REFERENCIAS %%%
 %%%%%%%%%%%%%%%%%%%
@@ -69,51 +67,8 @@
 %%% DOCUMENTO %%%
 %%%%%%%%%%%%%%%%%
 \begin{document}
-\pagestyle{empty}
 
-    \frontmatter
-        \pagestyle{empty}
-        \input{../resources/cover.tex}
-        
-        \cleardoublepage
-        \vspace*{3cm}
-        \begin{flushright}
-            \textit{Una frase bien cool acá}. \\
-            - Don Juan.
-        \end{flushright}
-        \cleardoublepage
-
-
-        \chapter*{Agradecimientos}
-        \thispagestyle{empty}
-        \input{../chapters/a0-agradecimientos.tex}
-
-        \clearpage
-        \pagestyle{beginstyle}
-        \tableofcontents
-        \chapter*{Introducción}
-        \addcontentsline{toc}{chapter}{Introducción}
-        \input{../chapters/a1-introduccion.tex}
-
-    \mainmatter
-        \cleardoublepage
-        \pagestyle{chapstyle}
-
-        \input{../chapters/c0.tex}
-        \input{../chapters/c1.tex}
-        \input{../chapters/c2.tex}
-        \input{../chapters/c3.tex}
-        \input{../chapters/c4.tex}
-
-    \backmatter
-        \cleardoublepage
-        \pagenumbering{alph}
-        \pagestyle{beginstyle}
-
-        \printindex[trad]
-        \printindex[sym]
-        \printindex[alph]
-
-        \printbibliography[heading=bibintoc, title={Referencias}]
+    \chapter{Prueba de Place Holder}
+    \input{../testes/placeholder.tex} 
 
 \end{document}
