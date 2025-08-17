@@ -26,7 +26,47 @@
     \newtheorem{consideracion}[definicion]{Consideración}
     \newtheorem{teorema}[definicion]{Teorema}
 %Comandos Creados
-    \input{../resources/comandos.tex}
+	\newcommand{\tq}{\text{ $|$ }}
+	\newcommand{\midcup}{\mbox{$\bigcup$}\,}
+	\newcommand{\midcap}{\mbox{$\bigcap$}\,}
+	\newcommand{\ms}[1]{\mathscr{#1}}
+
+	\renewcommand{\tau}{\ms{T}}
+
+	\newcommand{\mysetminusD}{\hbox{\tikz{\draw[line width=0.6pt,line cap=round] (3pt,0) -- (0,6pt);}}}
+	\newcommand{\mysetminusT}{\mysetminusD}
+	\newcommand{\mysetminusS}{\hbox{\tikz{\draw[line width=0.45pt,line cap=round] (2pt,0) -- (0,4pt);}}}
+	\newcommand{\mysetminusSS}{\hbox{\tikz{\draw[line width=0.4pt,line cap=round] (1.5pt,0) -- (0,3pt);}}}
+	\newcommand{\mysetminus}{\mathbin{\mathchoice{\mysetminusD}{\mysetminusT}{\mysetminusS}{\mysetminusSS}}}
+	\renewcommand{\setminus}{\mysetminus}
+
+	\DeclareMathOperator{\inte}{int}
+	\DeclareMathOperator{\ext}{ext}
+	\DeclareMathOperator{\cla}{cl}
+	\DeclareMathOperator{\der}{der}
+	\DeclareMathOperator{\fron}{fr}
+	\DeclareMathOperator{\scl}{sqcl}
+	\DeclareMathOperator{\cf}{cf}
+	\DeclareMathOperator{\Id}{Id}
+	\DeclareMathOperator{\ima}{ima}
+	\DeclareMathOperator{\dom}{dom}
+	\DeclareMathOperator{\St}{St}
+	\DeclareMathOperator{\Osq}{O_{sq}}
+
+	\newcommand{\T}{\text{\textsf{\small T}}}
+	\newcommand{\AN}{\text{\textsf{\small AN}}}
+	\newcommand{\OR}{\text{\textsf{\small ON}}}
+	\newcommand{\CAR}{\text{\textsf{\small CAR}}}
+	\newcommand{\zfc}{\text{\textsf{\small ZFC}}}
+	\newcommand{\zf}{\text{\textsf{\small ZF}}}
+	\newcommand{\HC}{\text{\textsf{\small HC}}}
+	\newcommand{\Ma}{\text{\textsf{\small MA}}}
+	\newcommand{\Ac}{\text{\textsf{\small AC}}}
+	\newcommand{\Pm}{\text{\textsf{\small MC}}}
+	\newcommand{\Pdm}{\text{\textsf{\small WMC}}}
+	\newcommand{\Ad}{\operatorname{\text{\textsf{\small AD}}}\,}
+	\newcommand{\Mad}{\operatorname{\text{\textsf{\small MAD}}}\,}
+
 %Exclusivo del minimal
     \renewcommand{\ref}[1]{??}
     \renewcommand{\pageref}[1]{??}
@@ -37,17 +77,18 @@
     \providecommand{\texorpdfstring}[2]{#1}
 
 \begin{document}
-\pagestyle{empty}
-    \pagestyle{empty}
-    \chapter*{Agradecimientos}
-	\input{../chapters/a0-agradecimientos.tex}
-    \tableofcontents
-    \chapter*{Introducción}
-    \addcontentsline{toc}{chapter}{Introducción}
-    \input{../chapters/a1-introduccion.tex}
-    \input{../chapters/c0.tex}
-    \input{../chapters/c1.tex}
-    \input{../chapters/c2.tex}
-    \input{../chapters/c3.tex}
-    \input{../chapters/c4.tex}
+    \frontmatter
+        \pagestyle{empty}
+        \chapter*{Agradecimientos}
+        \input{../chapters/a0-agradecimientos.tex}
+        \tableofcontents
+        \chapter*{Introducción}
+        \addcontentsline{toc}{chapter}{Introducción}
+    \mainmatter
+        \input{../chapters/a1-introduccion.tex}
+        \input{../chapters/c0.tex}
+        \input{../chapters/c1.tex}
+        \input{../chapters/c2.tex}
+        \input{../chapters/c3.tex}
+        \input{../chapters/c4.tex}
 \end{document}

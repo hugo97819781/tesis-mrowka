@@ -1,17 +1,15 @@
 %C O M A N D O S
-%GENERALES	
+%SUSTITUCIÓN PARA USO DE FUENTES ADICIONALES
+	\renewcommand{\mathbb}[1]{\symbb{#1}}
+    \renewcommand{\mathcal}[1]{\symcal{#1}}
+    \renewcommand{\mathfrak}[1]{\symfrak{#1}}
+%GENERALES
 	\newcommand{\tq}{\text{ $|$ }}
 	\newcommand{\midcup}{\mbox{$\bigcup$}\,}
 	\newcommand{\midcap}{\mbox{$\bigcap$}\,}
 	\newcommand{\ms}[1]{\mathscr{#1}}
-%CONJUNTOS POR COMPRENSIÓN
-	%\providecommand\given{}
-	%\newcommand\SetSymbol[1][]{\nonscript\:#1\vert\allowbreak\nonscript\:\mathopen{}}
-	%\DeclarePairedDelimiterX\Set[1]\{\}{\renewcommand\given{\SetSymbol[\delimsize]}#1}
-	%\DeclarePairedDelimiterX\Par[1]\langle\rangle{\renewcommand\given{\SetSymbol[\delimsize]}#1}
-	%\DeclarePairedDelimiterX\Bra[1](){#1}
 %RENOVACIÓN DE COMANDOS
-	%\renewcommand{\emptyset}{\varnothing}
+	\renewcommand{\emptyset}{\varnothing}
 	\renewcommand{\tau}{\ms{T}}
 	%Nuevo "Setminus"
 	\newcommand{\mysetminusD}{\hbox{\tikz{\draw[line width=0.6pt,line cap=round] (3pt,0) -- (0,6pt);}}}
